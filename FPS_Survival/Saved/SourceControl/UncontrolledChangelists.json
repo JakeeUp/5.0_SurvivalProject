@@ -1,0 +1,51 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/7/WL/LH5OI3PUN8IEFB2CDGQBQK.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/textures/armNormal.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/textures/armRoughness.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/textures/armAO.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/textures/armColor.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/source/pistol.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/textures/pistolNormal.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/textures/pistolAO.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/textures/pistolSmoothness.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/textures/pistolMetallic.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/textures/pistolcolor.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/source/arms2.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/textures/arm.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/textures/pistol.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Sounds/Sounds/ZombieDeath2.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Sounds/Sounds/ZombieDeath1.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Sounds/Sounds/ZombieAttack2.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Sounds/Sounds/ZombieAttack1.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Sounds/Sounds/PistolShot.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Sounds/Sounds/PistolReload.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Sounds/Sounds/GunEmpty.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Sounds/Sounds/GroundImpact2.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Sounds/Sounds/GroundImpact1.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Sounds/Sounds/ArabActionMusic.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Sounds/Sounds/GroundImpact3.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Sounds/Sounds/ZombieHit1.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Sounds/Sounds/ZombieImpact.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/UI/health_bar_empty.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/UI/health_bar.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/UI/reticle.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/UI/health_symbol.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/UI/Pistol_UI.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/source/arms2_PhysicsAsset.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/source/arms2_Skeleton.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/source/pistol_bullet.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/source/pistol_bullet_1.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/source/pistol_lower.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/source/pistol_mag.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/source/pistol_slide.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/source/pistol_trigger.uasset"
+			]
+		}
+	]
+}
