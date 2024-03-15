@@ -66,7 +66,9 @@
 				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Animations/fps_arms_reload_Anim_Montage.uasset",
 				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Animations/fps_arms_shoot_Anim_Montage.uasset",
 				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Blueprints/BP_Pistol.uasset",
-				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/source/Pistol.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/source/pistol.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Blueprints/MyFPS_Weapon.uasset",
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Blueprints/MyFPS_Weapon2.uasset",
 				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/source/arms2.uasset",
 				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/source/arms2_PhysicsAsset.uasset",
 				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/source/arms2_Skeleton.uasset",
@@ -77,8 +79,7 @@
 				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/BP_FPS_Controller.uasset",
 				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Animations/BP_FPS_Arms_Anims.uasset",
 				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/fps_arms_idle_Anim.uasset",
-				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/7/WL/LH5OI3PUN8IEFB2CDGQBQK.uasset",
-				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/source/pistol.uasset"
+				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/7/WL/LH5OI3PUN8IEFB2CDGQBQK.uasset"
 			]
 		}
 	]

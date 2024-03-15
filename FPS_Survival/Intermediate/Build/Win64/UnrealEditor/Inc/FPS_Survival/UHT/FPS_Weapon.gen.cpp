@@ -13,6 +13,8 @@ void EmptyLinkFunctionForGeneratedCodeFPS_Weapon() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
+	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 	FPS_SURVIVAL_API UClass* Z_Construct_UClass_AFPS_Weapon();
 	FPS_SURVIVAL_API UClass* Z_Construct_UClass_AFPS_Weapon_NoRegister();
 	NIAGARA_API UClass* Z_Construct_UClass_UNiagaraSystem_NoRegister();
@@ -57,6 +59,14 @@ void EmptyLinkFunctionForGeneratedCodeFPS_Weapon() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_m_pMuzzleFlash_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_m_pMuzzleFlash;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_FireMappingContext_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_FireMappingContext;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_FireAction_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_FireAction;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_m_iClipSize_MetaData[];
 #endif
@@ -143,6 +153,34 @@ void EmptyLinkFunctionForGeneratedCodeFPS_Weapon() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFPS_Weapon_Statics::NewProp_m_pMuzzleFlash = { "m_pMuzzleFlash", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFPS_Weapon, m_pMuzzleFlash), Z_Construct_UClass_UNiagaraSystem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFPS_Weapon_Statics::NewProp_m_pMuzzleFlash_MetaData), Z_Construct_UClass_AFPS_Weapon_Statics::NewProp_m_pMuzzleFlash_MetaData) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFPS_Weapon_Statics::NewProp_FireMappingContext_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** MappingContext */" },
+#endif
+		{ "ModuleRelativePath", "Public/FPS_Weapon.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "MappingContext" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFPS_Weapon_Statics::NewProp_FireMappingContext = { "FireMappingContext", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFPS_Weapon, FireMappingContext), Z_Construct_UClass_UInputMappingContext_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFPS_Weapon_Statics::NewProp_FireMappingContext_MetaData), Z_Construct_UClass_AFPS_Weapon_Statics::NewProp_FireMappingContext_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFPS_Weapon_Statics::NewProp_FireAction_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Fire Input Action */" },
+#endif
+		{ "ModuleRelativePath", "Public/FPS_Weapon.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Fire Input Action" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFPS_Weapon_Statics::NewProp_FireAction = { "FireAction", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFPS_Weapon, FireAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFPS_Weapon_Statics::NewProp_FireAction_MetaData), Z_Construct_UClass_AFPS_Weapon_Statics::NewProp_FireAction_MetaData) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFPS_Weapon_Statics::NewProp_m_iClipSize_MetaData[] = {
 		{ "Category", "Gameplay" },
 #if !UE_BUILD_SHIPPING
@@ -170,6 +208,8 @@ void EmptyLinkFunctionForGeneratedCodeFPS_Weapon() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPS_Weapon_Statics::NewProp_m_pEnvironmentalSounds,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPS_Weapon_Statics::NewProp_m_vMuzzleOffset,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPS_Weapon_Statics::NewProp_m_pMuzzleFlash,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPS_Weapon_Statics::NewProp_FireMappingContext,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPS_Weapon_Statics::NewProp_FireAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPS_Weapon_Statics::NewProp_m_iClipSize,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPS_Weapon_Statics::NewProp_m_iMaxSize,
 	};
@@ -211,9 +251,9 @@ void EmptyLinkFunctionForGeneratedCodeFPS_Weapon() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Git_UE_5_0_Project_5_0_SurvivalProject_FPS_Survival_Source_FPS_Survival_Public_FPS_Weapon_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AFPS_Weapon, AFPS_Weapon::StaticClass, TEXT("AFPS_Weapon"), &Z_Registration_Info_UClass_AFPS_Weapon, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPS_Weapon), 3420855091U) },
+		{ Z_Construct_UClass_AFPS_Weapon, AFPS_Weapon::StaticClass, TEXT("AFPS_Weapon"), &Z_Registration_Info_UClass_AFPS_Weapon, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPS_Weapon), 76574988U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Git_UE_5_0_Project_5_0_SurvivalProject_FPS_Survival_Source_FPS_Survival_Public_FPS_Weapon_h_2763530131(TEXT("/Script/FPS_Survival"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Git_UE_5_0_Project_5_0_SurvivalProject_FPS_Survival_Source_FPS_Survival_Public_FPS_Weapon_h_3700118835(TEXT("/Script/FPS_Survival"),
 		Z_CompiledInDeferFile_FID_Git_UE_5_0_Project_5_0_SurvivalProject_FPS_Survival_Source_FPS_Survival_Public_FPS_Weapon_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Git_UE_5_0_Project_5_0_SurvivalProject_FPS_Survival_Source_FPS_Survival_Public_FPS_Weapon_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

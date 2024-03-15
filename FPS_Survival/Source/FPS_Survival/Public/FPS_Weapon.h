@@ -32,6 +32,14 @@ public:
 	//muzzle flash
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = "SFX")
 	UNiagaraSystem* m_pMuzzleFlash;
+
+	/** MappingContext */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
+	class UInputMappingContext* FireMappingContext;
+
+	/** Fire Input Action */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
+	class UInputAction* FireAction;
 public:	
 	// Sets default values for this actor's properties
 	AFPS_Weapon();
