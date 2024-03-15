@@ -1,4 +1,4 @@
-#include "F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Intermediate/Build/Win64/x64/FPS_SurvivalEditor/Development/Engine/SharedDefinitions.Engine.Cpp17.InclOrderUnreal5_0.h"
+#include "F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Intermediate/Build/Win64/x64/FPS_SurvivalEditor/Development/UnrealEd/SharedDefinitions.UnrealEd.Cpp17.InclOrderUnreal5_0.h"
 #undef UE_IS_ENGINE_MODULE
 #undef DEPRECATED_FORGAME
 #define DEPRECATED_FORGAME DEPRECATED
@@ -22,3 +22,16 @@
 #define DEPRECATED_FORGAME DEPRECATED
 #define UE_DEPRECATED_FORGAME UE_DEPRECATED
 #define FPS_SURVIVAL_API DLLEXPORT
+#define VECTORVM_SUPPORTS_EXPERIMENTAL 1
+#define VECTORVM_SUPPORTS_LEGACY 1
+#define NIAGARA_API DLLIMPORT
+#define NIAGARACORE_API DLLIMPORT
+#define VECTORVM_SUPPORTS_EXPERIMENTAL 1
+#define VECTORVM_SUPPORTS_LEGACY 1
+#define VECTORVM_API DLLIMPORT
+#define NIAGARASHADER_API DLLIMPORT
+#define NIAGARAVERTEXFACTORIES_API DLLIMPORT
+#define WITH_GAMEPLAY_DEBUGGER_CORE 1
+#define WITH_GAMEPLAY_DEBUGGER 1
+#define WITH_GAMEPLAY_DEBUGGER_MENU 1
+#define AIMODULE_API DLLIMPORT
