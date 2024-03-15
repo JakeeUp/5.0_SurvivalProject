@@ -81,6 +81,9 @@
     <ClCompile Include="..\..\Source\FPS_Survival\Private\FPS_Controller.cpp">
       <Filter>Source\FPS_Survival\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\FPS_Survival\Private\FPS_Weapon.cpp">
+      <Filter>Source\FPS_Survival\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\FPS_Survival\Public">
       <UniqueIdentifier>{B199C01D-7CB9-3C1B-9264-8E9F489BC579}</UniqueIdentifier>
     </Filter>
@@ -88,6 +91,9 @@
       <Filter>Source\FPS_Survival\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\FPS_Survival\Public\FPS_Controller.h">
+      <Filter>Source\FPS_Survival\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\FPS_Survival\Public\FPS_Weapon.h">
       <Filter>Source\FPS_Survival\Public</Filter>
     </ClInclude>
   </ItemGroup>

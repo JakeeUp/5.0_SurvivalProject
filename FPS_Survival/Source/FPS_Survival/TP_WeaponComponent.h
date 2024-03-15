@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "Components/SkeletalMeshComponent.h"
+#include "NiagaraFunctionLibrary.h"
 #include "TP_WeaponComponent.generated.h"
 
 class AFPS_SurvivalCharacter;
@@ -19,17 +20,28 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category=Projectile)
 	TSubclassOf<class AFPS_SurvivalProjectile> ProjectileClass;
 
-	/** Sound to play each time we fire */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
-	USoundBase* FireSound;
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = "Sound")
+	USoundBase* m_wFireSound;
+
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = "Sound")
+	USoundBase* m_wEmptySound;
+
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = "Sound")
+	TArray<USoundBase*> m_wEnvironmentalSounds;
+
+	//Muzzle Offset
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = "Gameplay")
+	FVector m_wMuzzleOffset = FVector(100.f,0,10.f);
+
+	//muzzle flash
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = "SFX")
+	UNiagaraSystem* m_wMuzzleFlash;
 	
 	/** AnimMontage to play each time we fire */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 	UAnimMontage* FireAnimation;
 
-	/** Gun muzzle's offset from the characters location */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category=Gameplay)
-	FVector MuzzleOffset;
+	
 
 	/** MappingContext */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
