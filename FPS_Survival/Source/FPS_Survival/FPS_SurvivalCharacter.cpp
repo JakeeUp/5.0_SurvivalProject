@@ -11,7 +11,9 @@
 #include "Components/InputComponent.h"
 #include "GameFramework/InputSettings.h"
 #include "EnhancedInputSubsystems.h"
+#include "NetworkMessage.h"
 #include "Engine/LocalPlayer.h"
+#include "TP_WeaponComponent.h"
 
 //////////////////////////////////////////////////////////////////////////
 // AFPS_SurvivalCharacter
@@ -45,7 +47,8 @@ void AFPS_SurvivalCharacter::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
-
+	EquipWeapon();
+	
 	// Add Input Mapping Context
 	if (APlayerController* PlayerController = Cast<APlayerController>(Controller))
 	{
@@ -69,6 +72,12 @@ void AFPS_SurvivalCharacter::SetupPlayerInputComponent(UInputComponent* PlayerIn
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AFPS_SurvivalCharacter::Look);
+
+		// Reloading
+		EnhancedInputComponent->BindAction(ReloadAction, ETriggerEvent::Triggered,this,&AFPS_SurvivalCharacter::Reload);
+
+		//Shooting
+		EnhancedInputComponent->BindAction(MainAction,ETriggerEvent::Triggered,this,&AFPS_SurvivalCharacter::OnPrimaryAction);
 	}
 	
 }
@@ -83,6 +92,23 @@ void AFPS_SurvivalCharacter::SetHasRifle(bool bNewHasRifle)
 bool AFPS_SurvivalCharacter::GetHasRifle()
 {
 	return bHasRifle;
+}
+
+void AFPS_SurvivalCharacter::EquipWeapon()
+{
+	APlayerController* pController = Cast<APlayerController>(GetController());
+
+	const FRotator pRotation = pController->PlayerCameraManager->GetCameraRotation();
+	const FVector pLocation = GetOwner()->GetActorLocation();
+
+	FActorSpawnParameters pSpawnParams;
+	pSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+
+	AActor* pPistol = GetWorld()->SpawnActor<AActor>(m_cPistol,pLocation,pRotation,pSpawnParams);
+
+	UTP_WeaponComponent* pWeapon = Cast<UTP_WeaponComponent>(pPistol->GetComponentByClass(UTP_WeaponComponent::StaticClass()));
+
+	pWeapon->AttachWeapon(this);
 }
 
 void AFPS_SurvivalCharacter::Move(const FInputActionValue& Value)
@@ -110,4 +136,38 @@ void AFPS_SurvivalCharacter::Look(const FInputActionValue& Value)
 		AddControllerPitchInput(LookAxisVector.Y);
 	}
 }
+
+void AFPS_SurvivalCharacter::Reload()
+{
+	UAnimInstance* pAnimInstance = GetMesh1P()->GetAnimInstance();
+	if(pAnimInstance != nullptr)
+	{
+		if(m_pReloadMontage != nullptr)
+		{
+			pAnimInstance->Montage_Play(m_pReloadMontage, 1.f);
+		}
+	}
+}
+
+void AFPS_SurvivalCharacter::OnPrimaryAction()
+{
+	// Trigger the OnItemUsed Event
+	OnUseItem.Broadcast();
+
+	UAnimInstance* pAnimInstance = GetMesh1P()->GetAnimInstance();
+
+	if(pAnimInstance != nullptr)
+	{
+		if(m_pReloadMontage != nullptr)
+		{
+			pAnimInstance->Montage_Stop(.2f, m_pReloadMontage);
+		}
+		if(m_pShootMontage != nullptr)
+		{
+			pAnimInstance->Montage_Play(m_pShootMontage,1.f);
+		}
+	}
+}
+
+
 

@@ -94,7 +94,7 @@ void UTP_WeaponComponent::AttachWeapon(AFPS_SurvivalCharacter* TargetCharacter)
 
 	// Attach the weapon to the First Person Character
 	FAttachmentTransformRules AttachmentRules(EAttachmentRule::SnapToTarget, true);
-	GetOwner()->AttachToComponent(Character->GetMesh1P(),AttachmentRules, FName(TEXT("GripPoint")));
+	GetOwner()->AttachToComponent(Character->GetMesh1P(),AttachmentRules, FName(TEXT("WeaponSocket")));
 	
 	
 	// switch bHasRifle so the animation blueprint can switch to another animation set

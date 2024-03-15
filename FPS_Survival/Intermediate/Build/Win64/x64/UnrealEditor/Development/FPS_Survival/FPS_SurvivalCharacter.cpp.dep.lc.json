@@ -53,7 +53,12 @@
             "f:\\epicganes\\ue_5.3\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedinputsubsysteminterface.generated.h",
             "f:\\epicganes\\ue_5.3\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedinputsubsystems.generated.h",
             "f:\\epicganes\\ue_5.3\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\enhancedinputworldprocessor.h",
-            "f:\\epicganes\\ue_5.3\\engine\\source\\runtime\\slate\\public\\framework\\application\\iinputprocessor.h"
+            "f:\\epicganes\\ue_5.3\\engine\\source\\runtime\\slate\\public\\framework\\application\\iinputprocessor.h",
+            "f:\\epicganes\\ue_5.3\\engine\\source\\runtime\\sockets\\public\\networkmessage.h",
+            "f:\\epicganes\\ue_5.3\\engine\\source\\runtime\\core\\public\\serialization\\arrayreader.h",
+            "f:\\epicganes\\ue_5.3\\engine\\source\\runtime\\core\\public\\serialization\\bufferarchive.h",
+            "f:\\git\\ue\\5.0_project\\5.0_survivalproject\\fps_survival\\source\\fps_survival\\tp_weaponcomponent.h",
+            "f:\\git\\ue\\5.0_project\\5.0_survivalproject\\fps_survival\\intermediate\\build\\win64\\unrealeditor\\inc\\fps_survival\\uht\\tp_weaponcomponent.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
