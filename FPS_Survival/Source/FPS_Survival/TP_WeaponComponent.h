@@ -37,11 +37,7 @@ public:
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = "SFX")
 	UNiagaraSystem* m_wMuzzleFlash;
 	
-	/** AnimMontage to play each time we fire */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
-	UAnimMontage* FireAnimation;
 
-	
 
 	/** MappingContext */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))

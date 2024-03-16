@@ -15,6 +15,7 @@
 #include "NetworkMessage.h"
 #include "Engine/LocalPlayer.h"
 #include "TP_WeaponComponent.h"
+#include "Blueprint/UserWidget.h" 
 
 //////////////////////////////////////////////////////////////////////////
 // AFPS_SurvivalCharacter
@@ -48,7 +49,17 @@ void AFPS_SurvivalCharacter::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
+
+	GetMesh1P()->GetAnimInstance()->OnMontageEnded.AddDynamic(this, &AFPS_SurvivalCharacter::HandleOnMontageEnd);
+	
 	EquipWeapon();
+
+	if(m_cPlayerHud != nullptr)
+	{
+		//add hud
+		UUserWidget* HUD = CreateWidget<UUserWidget>(Cast<APlayerController>(GetController()), m_cPlayerHud);
+		HUD->AddToViewport(9999);
+	}
 	
 	// Add Input Mapping Context
 	if (APlayerController* PlayerController = Cast<APlayerController>(Controller))
@@ -83,6 +94,31 @@ void AFPS_SurvivalCharacter::SetupPlayerInputComponent(UInputComponent* PlayerIn
 	
 }
 
+void AFPS_SurvivalCharacter::HandleOnMontageEnd(UAnimMontage* a_pMontage, bool a_bInterrupted)
+{
+	if(a_pMontage->GetName().Contains("reload")&& !a_bInterrupted)
+	{
+		if(m_pEquippedWeapon == nullptr)
+		{
+			return;
+		}
+
+		if(totalAmmo >= m_pEquippedWeapon->m_iClipSize)
+		{
+			totalAmmo -= m_pEquippedWeapon->m_iClipSize;
+
+			int reloadAmt = m_pEquippedWeapon->m_iClipSize - currentAmmo;
+			currentAmmo += reloadAmt;
+		}
+		else
+		{
+			int reloadAmt = abs(totalAmmo - currentAmmo);
+			currentAmmo += reloadAmt;
+
+			totalAmmo = 0;
+		}
+	}
+}
 
 
 void AFPS_SurvivalCharacter::SetHasRifle(bool bNewHasRifle)
@@ -105,10 +141,16 @@ void AFPS_SurvivalCharacter::EquipWeapon()
 	FActorSpawnParameters pSpawnParams;
 	pSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
 
-	AActor* pPistol = GetWorld()->SpawnActor<AActor>(m_cPistol,pLocation,pRotation,pSpawnParams);
+	AActor* pPistol = GetWorld()->SpawnActor<AFPS_Weapon>(m_cPistol,pLocation,pRotation,pSpawnParams);
+
+	m_pEquippedWeapon = Cast<AFPS_Weapon>(pPistol);
+
+	//ammo
+	currentAmmo = m_pEquippedWeapon->m_iClipSize;
+	totalAmmo = m_pEquippedWeapon->m_iMaxSize;
 
 	//maybe answer
-	UTP_WeaponComponent* pWeapon = Cast<UTP_WeaponComponent>(pPistol->GetComponentByClass(UTP_WeaponComponent::StaticClass()));
+	UTP_WeaponComponent* pWeapon = m_pEquippedWeapon->m_pWeaponComponent;
 
 	pWeapon->AttachWeapon(this);
 }
@@ -141,14 +183,20 @@ void AFPS_SurvivalCharacter::Look(const FInputActionValue& Value)
 
 void AFPS_SurvivalCharacter::Reload()
 {
-	UAnimInstance* pAnimInstance = GetMesh1P()->GetAnimInstance();
-	if(pAnimInstance != nullptr)
+	//check if reload is needed
+
+	if(currentAmmo < m_pEquippedWeapon->m_iClipSize && totalAmmo > 0)
 	{
-		if(m_pReloadMontage != nullptr)
+		UAnimInstance* pAnimInstance = GetMesh1P()->GetAnimInstance();
+		if(pAnimInstance != nullptr)
 		{
-			pAnimInstance->Montage_Play(m_pReloadMontage, 1.f);
+			if(m_pReloadMontage != nullptr)
+			{
+				pAnimInstance->Montage_Play(m_pReloadMontage, 1.f);
+			}
 		}
 	}
+	
 }
 
 void AFPS_SurvivalCharacter::OnPrimaryAction()

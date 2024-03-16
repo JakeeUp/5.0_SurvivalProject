@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Logging/LogMacros.h"
+#include "FPS_Weapon.h"
 #include "FPS_SurvivalCharacter.generated.h"
 
 class UInputComponent;
@@ -28,6 +29,8 @@ class AFPS_SurvivalCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
+
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon", meta = (AllowPrivateAccess = "true"))
 	TSubclassOf<class AActor> m_cPistol;
 	
@@ -39,6 +42,12 @@ class AFPS_SurvivalCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* FirstPersonCameraComponent;
 
+
+	/****************************************************/
+	/****************************************************/
+	/*****************WEAPON INPUTS**********************/
+	/****************************************************/
+	/****************************************************/
 	/** MappingContext */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
 	UInputMappingContext* DefaultMappingContext;
@@ -57,6 +66,17 @@ class AFPS_SurvivalCharacter : public ACharacter
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
 	UInputAction* MainAction;
+
+
+
+	/****************************************************/
+	/****************************************************/
+	/*****************WEAPON AND HEALTH UI***************/
+	/****************************************************/
+	/****************************************************/
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapon", meta = (AllowPrivateAccess = "true"))
+	TSubclassOf<class UUserWidget> m_cPlayerHud;
+	
 
 public:
 	AFPS_SurvivalCharacter();
@@ -81,6 +101,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Weapon)
 	bool GetHasRifle();
 
+	//ref to weapon
+	AFPS_Weapon* m_pEquippedWeapon;
+	
 	//reload montage
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
 	UAnimMontage* m_pReloadMontage;
@@ -93,6 +116,15 @@ public:
 	FOnUseItem OnUseItem;
 
 	void EquipWeapon();
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	float m_fHealth = 100.0f;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	int currentAmmo = 0;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	int totalAmmo = 0;
 protected:
 	/** Called for movement input */
 	void Move(const FInputActionValue& Value);
@@ -110,6 +142,10 @@ protected:
 	// End of APawn interface
 
 public:
+
+	UFUNCTION()
+	void HandleOnMontageEnd(UAnimMontage* a_pMontage, bool a_bInterrupted);
+	
 	/** Returns Mesh1P subobject **/
 	USkeletalMeshComponent* GetMesh1P() const { return Mesh1P; }
 	/** Returns FirstPersonCameraComponent subobject **/

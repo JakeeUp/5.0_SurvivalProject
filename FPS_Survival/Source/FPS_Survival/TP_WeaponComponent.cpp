@@ -9,13 +9,15 @@
 #include "Kismet/GameplayStatics.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
+#include "AI/NavigationSystemBase.h"
+#include "AI/NavigationSystemBase.h"
+#include "AI/NavigationSystemBase.h"
 #include "Components/SceneComponent.h"
 
 // Sets default values for this component's properties
 UTP_WeaponComponent::UTP_WeaponComponent()
 {
 	// Default offset from the character location for projectiles to spawn
-	m_wMuzzleOffset = FVector(100.0f, 0.0f, 10.0f);
 }
 
 
@@ -26,9 +28,12 @@ void UTP_WeaponComponent::Fire()
 		return;
 	}
 
-	// Try and fire a projectile
-	if (ProjectileClass != nullptr)
+	if(Character->currentAmmo <= 0)
 	{
+		return;
+	}
+
+	
 		UWorld* const World = GetWorld();
 		if (World != nullptr)
 		{
@@ -37,31 +42,35 @@ void UTP_WeaponComponent::Fire()
 			// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
 			const FVector SpawnLocation = GetOwner()->GetActorLocation() + SpawnRotation.RotateVector(m_wMuzzleOffset);
 	
-			//Set Spawn Collision Handling Override
-			FActorSpawnParameters ActorSpawnParams;
-			ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
-	
-			// Spawn the projectile at the muzzle
-			World->SpawnActor<AFPS_SurvivalProjectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
+			FCollisionQueryParams queryParams;
+			queryParams.AddIgnoredActor(PlayerController->GetPawn());
+
+			FHitResult outHit;
+
+			World->LineTraceSingleByChannel(outHit, SpawnLocation,SpawnLocation + (SpawnRotation.Vector()* 3000), ECollisionChannel::ECC_Pawn, queryParams);
+			DrawDebugLine(World, SpawnLocation, SpawnLocation + (SpawnRotation.Vector()* 3000), FColor::Red,false, 5.f,5,5.f);
+
+			Character->currentAmmo = Character->currentAmmo - 1;
+
+			
 		}
-	}
 	
 	// Try and play the sound if specified
 	if (m_wFireSound != nullptr)
 	{
 		UGameplayStatics::PlaySoundAtLocation(this, m_wFireSound, Character->GetActorLocation());
 	}
-	
-	// Try and play a firing animation if specified
-	if (FireAnimation != nullptr)
+
+	if(m_wMuzzleFlash != nullptr)
 	{
-		// Get the animation object for the arms mesh
-		UAnimInstance* AnimInstance = Character->GetMesh1P()->GetAnimInstance();
-		if (AnimInstance != nullptr)
-		{
-			AnimInstance->Montage_Play(FireAnimation, 1.f);
-		}
+		APlayerController* PlayerController = Cast<APlayerController>(Character->GetController());
+		const FRotator SpawnRotation = PlayerController->PlayerCameraManager->GetCameraRotation();
+
+		const FVector SpawnLocation = GetOwner()->GetActorLocation() + SpawnRotation.RotateVector(m_wMuzzleOffset);
+
+		UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), m_wMuzzleFlash, SpawnLocation, SpawnRotation);
 	}
+	
 }
 
 void UTP_WeaponComponent::EndPlay(const EEndPlayReason::Type EndPlayReason)

@@ -75,6 +75,21 @@
     <Filter Include="Source\FPS_Survival\Private">
       <UniqueIdentifier>{C6ADB915-F9C2-3898-ABD5-92BEB1B62208}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\FPS_Survival\Private\BTT_ChasePlayer.cpp">
+      <Filter>Source\FPS_Survival\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\FPS_Survival\Private\BTT_FindPlayerLocation.cpp">
+      <Filter>Source\FPS_Survival\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\FPS_Survival\Private\Enemy.cpp">
+      <Filter>Source\FPS_Survival\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\FPS_Survival\Private\EnemyKeys.cpp">
+      <Filter>Source\FPS_Survival\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\FPS_Survival\Private\Enemy_Controller.cpp">
+      <Filter>Source\FPS_Survival\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\FPS_Survival\Private\FPS_Character.cpp">
       <Filter>Source\FPS_Survival\Private</Filter>
     </ClCompile>
@@ -87,6 +102,21 @@
     <Filter Include="Source\FPS_Survival\Public">
       <UniqueIdentifier>{B199C01D-7CB9-3C1B-9264-8E9F489BC579}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\FPS_Survival\Public\BTT_ChasePlayer.h">
+      <Filter>Source\FPS_Survival\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\FPS_Survival\Public\BTT_FindPlayerLocation.h">
+      <Filter>Source\FPS_Survival\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\FPS_Survival\Public\Enemy.h">
+      <Filter>Source\FPS_Survival\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\FPS_Survival\Public\EnemyKeys.h">
+      <Filter>Source\FPS_Survival\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\FPS_Survival\Public\Enemy_Controller.h">
+      <Filter>Source\FPS_Survival\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\FPS_Survival\Public\FPS_Character.h">
       <Filter>Source\FPS_Survival\Public</Filter>
     </ClInclude>

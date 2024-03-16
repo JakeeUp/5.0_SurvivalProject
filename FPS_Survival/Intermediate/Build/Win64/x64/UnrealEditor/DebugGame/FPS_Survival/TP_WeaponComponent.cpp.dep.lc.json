@@ -136,6 +136,8 @@
             "f:\\epicganes\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
             "f:\\epicganes\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
             "f:\\epicganes\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
+            "f:\\git\\ue\\5.0_project\\5.0_survivalproject\\fps_survival\\source\\fps_survival\\public\\fps_weapon.h",
+            "f:\\git\\ue\\5.0_project\\5.0_survivalproject\\fps_survival\\intermediate\\build\\win64\\unrealeditor\\inc\\fps_survival\\uht\\fps_weapon.generated.h",
             "f:\\git\\ue\\5.0_project\\5.0_survivalproject\\fps_survival\\intermediate\\build\\win64\\unrealeditor\\inc\\fps_survival\\uht\\fps_survivalcharacter.generated.h",
             "f:\\git\\ue\\5.0_project\\5.0_survivalproject\\fps_survival\\source\\fps_survival\\fps_survivalprojectile.h",
             "f:\\git\\ue\\5.0_project\\5.0_survivalproject\\fps_survival\\intermediate\\build\\win64\\unrealeditor\\inc\\fps_survival\\uht\\fps_survivalprojectile.generated.h",
@@ -171,7 +173,9 @@
             "f:\\epicganes\\ue_5.3\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedinputsubsysteminterface.generated.h",
             "f:\\epicganes\\ue_5.3\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedinputsubsystems.generated.h",
             "f:\\epicganes\\ue_5.3\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\enhancedinputworldprocessor.h",
-            "f:\\epicganes\\ue_5.3\\engine\\source\\runtime\\slate\\public\\framework\\application\\iinputprocessor.h"
+            "f:\\epicganes\\ue_5.3\\engine\\source\\runtime\\slate\\public\\framework\\application\\iinputprocessor.h",
+            "f:\\epicganes\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\ai\\navigationsystembase.h",
+            "f:\\epicganes\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\navigationsystembase.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
