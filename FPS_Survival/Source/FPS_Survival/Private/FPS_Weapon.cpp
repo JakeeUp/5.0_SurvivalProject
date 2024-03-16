@@ -28,6 +28,8 @@ void AFPS_Weapon::BeginPlay()
 	m_pWeaponComponent->m_wEnvironmentalSounds = m_pEnvironmentalSounds;
 	m_pWeaponComponent->m_wMuzzleOffset = m_vMuzzleOffset;
 	m_pWeaponComponent->m_wMuzzleFlash = m_pMuzzleFlash;
+	m_pWeaponComponent->FireMappingContext = FireMappingContext;
+	m_pWeaponComponent->FireAction = FireAction;
 	
 }
 

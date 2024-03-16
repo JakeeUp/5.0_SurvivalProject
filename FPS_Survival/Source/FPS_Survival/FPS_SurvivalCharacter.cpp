@@ -11,6 +11,7 @@
 #include "Components/InputComponent.h"
 #include "GameFramework/InputSettings.h"
 #include "EnhancedInputSubsystems.h"
+#include "FPS_Weapon.h"
 #include "NetworkMessage.h"
 #include "Engine/LocalPlayer.h"
 #include "TP_WeaponComponent.h"
@@ -106,6 +107,7 @@ void AFPS_SurvivalCharacter::EquipWeapon()
 
 	AActor* pPistol = GetWorld()->SpawnActor<AActor>(m_cPistol,pLocation,pRotation,pSpawnParams);
 
+	//maybe answer
 	UTP_WeaponComponent* pWeapon = Cast<UTP_WeaponComponent>(pPistol->GetComponentByClass(UTP_WeaponComponent::StaticClass()));
 
 	pWeapon->AttachWeapon(this);

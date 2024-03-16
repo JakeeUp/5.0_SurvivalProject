@@ -40,12 +40,12 @@ public:
 	/** Fire Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
 	class UInputAction* FireAction;
+	//Weapon Component
+	UTP_WeaponComponent* m_pWeaponComponent;
 public:	
 	// Sets default values for this actor's properties
 	AFPS_Weapon();
 
-	//Weapon Component
-	UTP_WeaponComponent* m_pWeaponComponent;
 
 	//Ammo sizes
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = "Gameplay")
