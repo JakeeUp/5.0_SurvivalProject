@@ -123,7 +123,7 @@ public:
 	void EquipWeapon();
 
 	//taking damage
-	void TakeDamage(float a_fDamage);
+	void p_TakeDamage(float a_fDamage);
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	float m_fHealth = 100.0f;

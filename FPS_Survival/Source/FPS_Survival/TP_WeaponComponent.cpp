@@ -3,14 +3,11 @@
 
 #include "TP_WeaponComponent.h"
 #include "FPS_SurvivalCharacter.h"
-#include "FPS_SurvivalProjectile.h"
 #include "GameFramework/PlayerController.h"
 #include "Camera/PlayerCameraManager.h"
 #include "Kismet/GameplayStatics.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
-#include "AI/NavigationSystemBase.h"
-#include "AI/NavigationSystemBase.h"
 #include "AI/NavigationSystemBase.h"
 #include "Components/SceneComponent.h"
 #include "Enemy.h"
@@ -55,7 +52,7 @@ void UTP_WeaponComponent::Fire()
 			AEnemy* pEnemy = Cast<AEnemy>(outHit.GetActor());
 			if(pEnemy)
 			{
-				pEnemy->TakeDamage(10.0f);
+				pEnemy->e_TakeDamage(10.0f);
 			}
 			else //play enviro sounds
 			{

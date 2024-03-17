@@ -53,7 +53,9 @@ public:
 	//combat methods
 	void Attack();
 
-	void TakeDamage(float a_fDamage);
+	// void TakeDamage(float a_fDamage);
+
+	void e_TakeDamage(float a_fDamage);
 
 	//death methods
 

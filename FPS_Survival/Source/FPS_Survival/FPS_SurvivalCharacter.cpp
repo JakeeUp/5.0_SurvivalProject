@@ -3,7 +3,6 @@
 #include "FPS_SurvivalCharacter.h"
 
 #include "EnhancedInputComponent.h"
-#include "FPS_SurvivalProjectile.h"
 #include "InputActionValue.h"
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
@@ -159,7 +158,7 @@ void AFPS_SurvivalCharacter::EquipWeapon()
 	pWeapon->AttachWeapon(this);
 }
 
-void AFPS_SurvivalCharacter::TakeDamage(float a_fDamage)
+void AFPS_SurvivalCharacter::p_TakeDamage(float a_fDamage)
 {
 	//deal damage
 	m_fHealth -= a_fDamage;

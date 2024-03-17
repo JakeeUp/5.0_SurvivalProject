@@ -21,6 +21,8 @@ void AEnemy::BeginPlay()
 	Super::BeginPlay();
 
 	GetMesh()->GetAnimInstance()->OnMontageEnded.AddDynamic(this, &AEnemy::HandleOnMontageEnded);
+
+	m_vWorldSpawnLocation = GetActorLocation();
 	
 }
 
@@ -48,7 +50,7 @@ void AEnemy::Attack()
 			pAnimInstance->Montage_Play(m_pAttackMontage);
 
 			AFPS_SurvivalCharacter* pPlayer = Cast<AFPS_SurvivalCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(),0));
-			pPlayer->TakeDamage(10.f);
+			pPlayer->p_TakeDamage(10.f);
 
 			//attack sounds
 			if(m_pAttackSounds.Num()>0)
@@ -59,7 +61,7 @@ void AEnemy::Attack()
 	}
 }
 
-void AEnemy::TakeDamage(float a_fDamage)
+void AEnemy::e_TakeDamage(float a_fDamage)
 {
 	//check if dead
 	UAnimInstance* pAnimInstance = GetMesh()->GetAnimInstance();
@@ -106,6 +108,14 @@ void AEnemy::Die()
 void AEnemy::Reset()
 {
 	//TODO
+
+	//tp enemy back to spawn
+	TeleportTo(m_vWorldSpawnLocation,GetActorRotation());
+
+	m_fHealth = 30.0f;
+	m_bInCombat = false;
+
+	
 }
 
 void AEnemy::HandleOnMontageEnded(UAnimMontage* a_pMontage, bool a_bInterrupted)
@@ -113,7 +123,7 @@ void AEnemy::HandleOnMontageEnded(UAnimMontage* a_pMontage, bool a_bInterrupted)
 	//CHECK DEAHT MONTAGE
 	if(a_pMontage->GetName().Contains("Death"))
 	{
-		Destroy();
+		Reset();
 	}
 }
 

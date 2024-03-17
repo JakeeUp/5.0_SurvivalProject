@@ -153,8 +153,6 @@
             "f:\\epicganes\\ue_5.3\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\inputmappingquery.h",
             "f:\\epicganes\\ue_5.3\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\inputmappingquery.generated.h",
             "f:\\epicganes\\ue_5.3\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedinputcomponent.generated.h",
-            "f:\\git\\ue\\5.0_project\\5.0_survivalproject\\fps_survival\\source\\fps_survival\\fps_survivalprojectile.h",
-            "f:\\git\\ue\\5.0_project\\5.0_survivalproject\\fps_survival\\intermediate\\build\\win64\\unrealeditor\\inc\\fps_survival\\uht\\fps_survivalprojectile.generated.h",
             "f:\\epicganes\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\camera\\cameracomponent.h",
             "f:\\epicganes\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\cameracomponent.generated.h",
             "f:\\epicganes\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\components\\capsulecomponent.h",
@@ -344,7 +342,16 @@
             "f:\\epicganes\\ue_5.3\\engine\\source\\runtime\\umg\\public\\animation\\widgetanimationbinding.h",
             "f:\\epicganes\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\widgetanimationbinding.generated.h",
             "f:\\epicganes\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\widgetanimation.generated.h",
-            "f:\\epicganes\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\userwidget.generated.h"
+            "f:\\epicganes\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\userwidget.generated.h",
+            "f:\\epicganes\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystatics.h",
+            "f:\\epicganes\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetsystemlibrary.h",
+            "f:\\epicganes\\ue_5.3\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "f:\\epicganes\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetsystemlibrary.generated.h",
+            "f:\\epicganes\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\sound\\dialoguetypes.h",
+            "f:\\epicganes\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\dialoguetypes.generated.h",
+            "f:\\epicganes\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystaticstypes.h",
+            "f:\\epicganes\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystaticstypes.generated.h",
+            "f:\\epicganes\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystatics.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

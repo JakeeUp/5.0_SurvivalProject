@@ -90,6 +90,9 @@
     <ClCompile Include="..\..\Source\FPS_Survival\Private\EnemyKeys.cpp">
       <Filter>Source\FPS_Survival\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\FPS_Survival\Private\EnemyManager.cpp">
+      <Filter>Source\FPS_Survival\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\FPS_Survival\Private\Enemy_Controller.cpp">
       <Filter>Source\FPS_Survival\Private</Filter>
     </ClCompile>
@@ -121,6 +124,9 @@
       <Filter>Source\FPS_Survival\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\FPS_Survival\Public\EnemyKeys.h">
+      <Filter>Source\FPS_Survival\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\FPS_Survival\Public\EnemyManager.h">
       <Filter>Source\FPS_Survival\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\FPS_Survival\Public\Enemy_Controller.h">
