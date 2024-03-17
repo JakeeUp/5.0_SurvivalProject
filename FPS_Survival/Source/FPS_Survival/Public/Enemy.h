@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "EnemyManager.h"
 #include "Enemy.generated.h"
 
 
@@ -65,5 +66,9 @@ public:
 	//montage end handler
 	UFUNCTION()
 	void HandleOnMontageEnded(UAnimMontage* a_pMontage, bool a_bInterrupted);
+
+private:
+	//ref that contains manager
+	AEnemyManager* m_pEnemyManager;
 
 };

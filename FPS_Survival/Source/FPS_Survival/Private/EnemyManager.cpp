@@ -44,19 +44,117 @@ void AEnemyManager::SpawnFirstWave()
 
 void AEnemyManager::UpdateWaveParameters()
 {
+	//update wave count and kills
+	m_iCurrentWave += 1;
+	m_iWaveKills = 0;
+
+	//update wave size and arena max
+	m_iCurrentWaveSize += 4;
+	m_iMaxEnemiesInArea += 2;
+
+	if(m_iMaxEnemiesInArea >= m_pEnemies.Num())
+	{
+		m_iMaxEnemiesInArea = m_pEnemies.Num() - 2;
+	}
+
+	//update max and min walk speeds per round
+	m_fGlobalMaxWalkSpeed += 100.0f;
+	if(m_fGlobalMaxWalkSpeed > 400.0f)
+	{
+		m_fGlobalMaxWalkSpeed = 400.0f;
+	}
+
+	m_fGlobalMinWalkSpeed += 50.0f;
+	if(m_fGlobalMinWalkSpeed > 350.0f)
+	{
+		m_fGlobalMinWalkSpeed = 350.0f;
+	}
 }
 
 void AEnemyManager::StartNextWave()
 {
+	//init spawn count tracker
+	int spawnCount = 0;
+	for(int i = 0; i < m_pEnemies.Num(); i++)
+	{
+		//break loop if max enmies have been reached
+		if(spawnCount == m_iMaxEnemiesInArea || spawnCount == m_iCurrentWaveSize)
+		{
+			break;
+		}
+
+		//cast to enemy
+		AEnemy* pEnemy = Cast<AEnemy>(m_pEnemies[i]);
+
+		if(!pEnemy->m_bInCombat)
+		{
+			pEnemy->SetActorEnableCollision(false);
+			pEnemy->TeleportTo(m_pSpawnLocations[FMath::RandRange(0, m_pSpawnLocations.Num() - 1)], pEnemy->GetActorRotation());
+			pEnemy->SetActorEnableCollision(true);
+
+			pEnemy->m_bInCombat = true;
+
+			spawnCount++;
+		}
+	}
+
+	ModifyWaveSpeeds();
 }
 
 void AEnemyManager::SpawnMoreEnemies()
 {
+	//check if enemy kills are needed for wave complete
+
+	int neededKills = m_iCurrentWaveSize - m_iWaveKills;
+	if(neededKills > 0)
+	{
+		if(GetAllEnemiesInCombat().Num() < neededKills)
+		{
+			//check if arena isnt full
+			if(GetAllEnemiesInCombat().Num() < m_iMaxEnemiesInArea)
+			{
+				//go through enemis
+				for(int i = 0; i< m_pEnemies.Num(); i++)
+				{
+					//cast to enemy
+					AEnemy* pEnemy = Cast<AEnemy>(m_pEnemies[i]);
+
+					if(!pEnemy->m_bInCombat)
+					{
+						//disable collision temp in case enemies try to spawn on top of each other
+						pEnemy->SetActorEnableCollision(false);
+						pEnemy->TeleportTo(m_pSpawnLocations[FMath::RandRange(0, m_pSpawnLocations.Num() - 1)], pEnemy->GetActorRotation());
+						pEnemy->SetActorEnableCollision(true);
+						//combat status
+						pEnemy->m_bInCombat = true;
+						break;
+
+					}
+				}
+			}
+		}
+	}
 }
 
 TArray<AActor*> AEnemyManager::GetAllEnemiesInCombat()
 {
-	return TArray<AActor*>();
+	//iterate thorugh all enemies and add to another list all enmeis in combat
+
+	TArray<AActor*> pEnemiesInCombat = TArray<AActor*>();
+	for(AActor* actor : m_pEnemies)
+	{
+		//cast to enemy
+		AEnemy* pEnemy = Cast<AEnemy>(actor);
+
+		//add to list if in combat
+
+		if(pEnemy->m_bInCombat)
+		{
+			pEnemiesInCombat.Add(actor);
+		}
+	}
+	
+	return pEnemiesInCombat;
 }
 
 void AEnemyManager::ModifyWaveSpeeds()
@@ -87,8 +185,9 @@ void AEnemyManager::BeginPlay()
 
 		
 	},3,false);
-	
-	
+
+	//init wave size
+	m_iCurrentWaveSize = m_iFirstWaveSpawnCount;
 }
 
 // Called every frame

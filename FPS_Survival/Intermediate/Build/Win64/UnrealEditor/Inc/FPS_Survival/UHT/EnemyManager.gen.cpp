@@ -42,6 +42,14 @@ void EmptyLinkFunctionForGeneratedCodeEnemyManager() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_m_iCurrentWave_MetaData[];
 #endif
 		static const UECodeGen_Private::FIntPropertyParams NewProp_m_iCurrentWave;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_m_iCurrentWaveSize_MetaData[];
+#endif
+		static const UECodeGen_Private::FIntPropertyParams NewProp_m_iCurrentWaveSize;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_m_iWaveKills_MetaData[];
+#endif
+		static const UECodeGen_Private::FIntPropertyParams NewProp_m_iWaveKills;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -85,11 +93,33 @@ void EmptyLinkFunctionForGeneratedCodeEnemyManager() {}
 	};
 #endif
 	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_AEnemyManager_Statics::NewProp_m_iCurrentWave = { "m_iCurrentWave", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemyManager, m_iCurrentWave), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AEnemyManager_Statics::NewProp_m_iCurrentWave_MetaData), Z_Construct_UClass_AEnemyManager_Statics::NewProp_m_iCurrentWave_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemyManager_Statics::NewProp_m_iCurrentWaveSize_MetaData[] = {
+		{ "Category", "Wave" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//count and kill tracking\n" },
+#endif
+		{ "ModuleRelativePath", "Public/EnemyManager.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "count and kill tracking" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_AEnemyManager_Statics::NewProp_m_iCurrentWaveSize = { "m_iCurrentWaveSize", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemyManager, m_iCurrentWaveSize), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AEnemyManager_Statics::NewProp_m_iCurrentWaveSize_MetaData), Z_Construct_UClass_AEnemyManager_Statics::NewProp_m_iCurrentWaveSize_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemyManager_Statics::NewProp_m_iWaveKills_MetaData[] = {
+		{ "Category", "Wave" },
+		{ "ModuleRelativePath", "Public/EnemyManager.h" },
+	};
+#endif
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_AEnemyManager_Statics::NewProp_m_iWaveKills = { "m_iWaveKills", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemyManager, m_iWaveKills), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AEnemyManager_Statics::NewProp_m_iWaveKills_MetaData), Z_Construct_UClass_AEnemyManager_Statics::NewProp_m_iWaveKills_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEnemyManager_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyManager_Statics::NewProp_m_pSpawnLocations_Inner,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyManager_Statics::NewProp_m_pSpawnLocations,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyManager_Statics::NewProp_m_iFirstWaveSpawnCount,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyManager_Statics::NewProp_m_iCurrentWave,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyManager_Statics::NewProp_m_iCurrentWaveSize,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyManager_Statics::NewProp_m_iWaveKills,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AEnemyManager_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AEnemyManager>::IsAbstract,
@@ -129,9 +159,9 @@ void EmptyLinkFunctionForGeneratedCodeEnemyManager() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Git_UE_5_0_Project_5_0_SurvivalProject_FPS_Survival_Source_FPS_Survival_Public_EnemyManager_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AEnemyManager, AEnemyManager::StaticClass, TEXT("AEnemyManager"), &Z_Registration_Info_UClass_AEnemyManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemyManager), 3899973130U) },
+		{ Z_Construct_UClass_AEnemyManager, AEnemyManager::StaticClass, TEXT("AEnemyManager"), &Z_Registration_Info_UClass_AEnemyManager, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemyManager), 2267507732U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Git_UE_5_0_Project_5_0_SurvivalProject_FPS_Survival_Source_FPS_Survival_Public_EnemyManager_h_746557492(TEXT("/Script/FPS_Survival"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Git_UE_5_0_Project_5_0_SurvivalProject_FPS_Survival_Source_FPS_Survival_Public_EnemyManager_h_2380213752(TEXT("/Script/FPS_Survival"),
 		Z_CompiledInDeferFile_FID_Git_UE_5_0_Project_5_0_SurvivalProject_FPS_Survival_Source_FPS_Survival_Public_EnemyManager_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Git_UE_5_0_Project_5_0_SurvivalProject_FPS_Survival_Source_FPS_Survival_Public_EnemyManager_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

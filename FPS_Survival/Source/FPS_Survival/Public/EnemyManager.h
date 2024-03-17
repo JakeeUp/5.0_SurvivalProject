@@ -29,7 +29,9 @@ public:
 	int m_iCurrentWave = 1;
 
 	//count and kill tracking
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Wave")
 	int m_iCurrentWaveSize;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Wave")
 	int m_iWaveKills = 0;
 
 	//spawning and updating enemies

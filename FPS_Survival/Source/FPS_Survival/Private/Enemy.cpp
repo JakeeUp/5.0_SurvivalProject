@@ -23,6 +23,9 @@ void AEnemy::BeginPlay()
 	GetMesh()->GetAnimInstance()->OnMontageEnded.AddDynamic(this, &AEnemy::HandleOnMontageEnded);
 
 	m_vWorldSpawnLocation = GetActorLocation();
+
+	// get ref to manager
+	m_pEnemyManager = Cast<AEnemyManager>(UGameplayStatics::GetActorOfClass(GetWorld(), AEnemyManager::StaticClass()));
 	
 }
 
@@ -124,6 +127,22 @@ void AEnemy::HandleOnMontageEnded(UAnimMontage* a_pMontage, bool a_bInterrupted)
 	if(a_pMontage->GetName().Contains("Death"))
 	{
 		Reset();
+
+		//update manager
+		m_pEnemyManager->m_iWaveKills++;
+
+		if(m_pEnemyManager->m_iWaveKills >= m_pEnemyManager->m_iCurrentWaveSize)
+		{
+			//begin next wave and update params
+			m_pEnemyManager->UpdateWaveParameters();
+			m_pEnemyManager->StartNextWave();
+		}
+		else
+		{
+			//try to spawn more enemies
+			m_pEnemyManager->SpawnMoreEnemies();
+			
+		}
 	}
 }
 

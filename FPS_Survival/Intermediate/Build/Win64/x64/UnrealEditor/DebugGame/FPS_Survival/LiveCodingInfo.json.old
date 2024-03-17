@@ -24,7 +24,6 @@
 			"BTT_FindPlayerLocation.cpp.obj",
 			"EnemyKeys.cpp.obj",
 			"Enemy_Controller.cpp.obj",
-			"FPS_Character.cpp.obj",
 			"FPS_Controller.cpp.obj",
 			"FPS_Weapon.cpp.obj",
 			"IsPlayerInRange.cpp.obj",
@@ -34,6 +33,7 @@
 			"FPS_SurvivalCharacter.cpp.obj",
 			"Enemy.cpp.obj",
 			"EnemyManager.cpp.obj",
+			"FPS_Character.cpp.obj",
 			"TP_WeaponComponent.cpp.obj"
 		]
 	}
