@@ -4038,3 +4038,1001 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.03.17-01.07.27:439][216]LogUObjectHash: Compacting FUObjectHashTables data took   1.88ms
 [2024.03.17-01.07.28:011][217]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed
 [2024.03.17-01.07.28:011][217]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.03.17-01.09.07:417][495]LogAssetEditorSubsystem: Opening Asset editor for BlackboardData /Game/SurvivalFPS/AI/BB_Enemy.BB_Enemy
+[2024.03.17-01.09.10:397][797]LogAssetEditorSubsystem: Opening Asset editor for BlackboardData /Game/SurvivalFPS/AI/BB_EnemyBB.BB_EnemyBB
+[2024.03.17-01.09.30:872][882]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.03.17-01.09.30:899][882]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/SurvivalFPS/AI/BB_EnemyBB" FILE="../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/AI/BB_EnemyBB.uasset" SILENT=true
+[2024.03.17-01.09.30:902][882]LogSavePackage: Moving output files for package: /Game/SurvivalFPS/AI/BB_EnemyBB
+[2024.03.17-01.09.30:903][882]LogSavePackage: Moving '../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Saved/BB_EnemyBBE42C8EE44090C6E19A87B3906446AB22.tmp' to '../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/AI/BB_EnemyBB.uasset'
+[2024.03.17-01.09.30:912][882]LogFileHelpers: InternalPromptForCheckoutAndSave took 39 ms (total: 3.41 sec)
+[2024.03.17-01.09.30:913][882]AssetCheck: New page: Asset Save: BB_EnemyBB
+[2024.03.17-01.09.30:913][882]LogContentValidation: Display: Validating /Script/AIModule.BlackboardData /Game/SurvivalFPS/AI/BB_EnemyBB.BB_EnemyBB
+[2024.03.17-01.09.33:859][226]LogBehaviorTree: Warning: Blackboard asset (BB_Enemy) has (BB_Enemy) in parent chain! Clearing value to avoid cycle.
+[2024.03.17-01.09.36:368][516]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.03.17-01.09.36:395][516]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/SurvivalFPS/AI/BB_Enemy" FILE="../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/AI/BB_Enemy.uasset" SILENT=true
+[2024.03.17-01.09.36:397][516]LogSavePackage: Moving output files for package: /Game/SurvivalFPS/AI/BB_Enemy
+[2024.03.17-01.09.36:398][516]LogSavePackage: Moving '../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Saved/BB_Enemy72A7E7C74C4C906BE2BB388A1287CD8B.tmp' to '../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/AI/BB_Enemy.uasset'
+[2024.03.17-01.09.36:406][516]LogFileHelpers: InternalPromptForCheckoutAndSave took 37 ms (total: 3.45 sec)
+[2024.03.17-01.09.36:406][516]AssetCheck: New page: Asset Save: BB_Enemy
+[2024.03.17-01.09.36:406][516]LogContentValidation: Display: Validating /Script/AIModule.BlackboardData /Game/SurvivalFPS/AI/BB_Enemy.BB_Enemy
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: request failed, libcurl error: 65 (Send failed since rewinding of the data stream failed)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 0 (Found bundle for host: 0xaf160160c00 [serially])
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 1 (Re-using existing connection with host datarouter.ol.epicgames.com)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 2 (We are completely uploaded and fine)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 3 (TLSv1.2 (IN), TLS alert, close notify (256):)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 4 (Connection died, retrying a fresh connect (retry count: 1))
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 5 (state.rewindbeforesend = TRUE)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 6 (Closing connection)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 7 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 8 (Issue another request to this URL: 'https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream')
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 9 (  Trying 34.194.194.155:443...)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 10 (Connected to datarouter.ol.epicgames.com (34.194.194.155) port 443)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 11 (ALPN: curl offers http/1.1)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 12 (SSL reusing session ID)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 13 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 14 (TLSv1.3 (IN), TLS handshake, Server hello (2):)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 15 (TLSv1.2 (IN), TLS handshake, Certificate (11):)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 16 (TLSv1.2 (IN), TLS handshake, Server key exchange (12):)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 17 (TLSv1.2 (IN), TLS handshake, Server finished (14):)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 18 (TLSv1.2 (OUT), TLS handshake, Client key exchange (16):)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 19 (TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 20 (TLSv1.2 (OUT), TLS handshake, Finished (20):)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 21 (TLSv1.2 (IN), TLS handshake, Finished (20):)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 22 (old SSL session ID is stale, removing)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 23 (SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 24 (ALPN: server accepted http/1.1)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 25 (Server certificate:)
+[2024.03.17-01.09.51:801][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 26 ( subject: CN=datarouter.cfef.live.use1a.on.epicgames.com)
+[2024.03.17-01.09.51:802][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 27 ( start date: Mar  4 00:00:00 2024 GMT)
+[2024.03.17-01.09.51:802][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 28 ( expire date: Apr  2 23:59:59 2025 GMT)
+[2024.03.17-01.09.51:802][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 29 ( subjectAltName: host "datarouter.ol.epicgames.com" matched cert's "datarouter.ol.epicgames.com")
+[2024.03.17-01.09.51:802][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 30 ( issuer: C=US; O=Amazon; CN=Amazon RSA 2048 M03)
+[2024.03.17-01.09.51:802][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 31 ( SSL certificate verify ok.)
+[2024.03.17-01.09.51:802][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 32 (using HTTP/1.1)
+[2024.03.17-01.09.51:802][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 33 (necessary data rewind wasn't possible)
+[2024.03.17-01.09.51:802][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 34 (Closing connection)
+[2024.03.17-01.09.51:802][257]LogHttp: Warning: 00000AF202C1AA00: libcurl info message cache 35 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.09.51:802][257]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.03.17-01.10.31:343][807]BlueprintLog: New page: Compile BP_Enemy
+[2024.03.17-01.10.31:525][807]LogUObjectHash: Compacting FUObjectHashTables data took   1.95ms
+[2024.03.17-01.10.31:867][836]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.03.17-01.10.31:901][836]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/SurvivalFPS/AI/BP_Enemy" FILE="../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/AI/BP_Enemy.uasset" SILENT=true
+[2024.03.17-01.10.31:908][836]LogSavePackage: Moving output files for package: /Game/SurvivalFPS/AI/BP_Enemy
+[2024.03.17-01.10.31:909][836]LogSavePackage: Moving '../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Saved/BP_EnemyB2F2010B4016CB90A32A34AC0AD6E37E.tmp' to '../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/AI/BP_Enemy.uasset'
+[2024.03.17-01.10.31:917][836]LogFileHelpers: InternalPromptForCheckoutAndSave took 49 ms (total: 3.50 sec)
+[2024.03.17-01.10.31:918][836]AssetCheck: New page: Asset Save: BP_Enemy
+[2024.03.17-01.10.31:918][836]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/SurvivalFPS/AI/BP_Enemy.BP_Enemy
+[2024.03.17-01.10.35:594][224]LogAssetEditorSubsystem: Opening Asset editor for BehaviorTree /Game/SurvivalFPS/AI/BT_EnemyBT.BT_EnemyBT
+[2024.03.17-01.11.09:987][243]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.03.17-01.11.10:014][243]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/SurvivalFPS/AI/BT_EnemyBT" FILE="../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/AI/BT_EnemyBT.uasset" SILENT=true
+[2024.03.17-01.11.10:019][243]LogSavePackage: Moving output files for package: /Game/SurvivalFPS/AI/BT_EnemyBT
+[2024.03.17-01.11.10:020][243]LogSavePackage: Moving '../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Saved/BT_EnemyBTC16E254F4F82D41F527966A38A3B8E48.tmp' to '../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/AI/BT_EnemyBT.uasset'
+[2024.03.17-01.11.10:027][243]LogFileHelpers: InternalPromptForCheckoutAndSave took 40 ms (total: 3.54 sec)
+[2024.03.17-01.11.10:028][243]AssetCheck: New page: Asset Save: BT_EnemyBT
+[2024.03.17-01.11.10:028][243]LogContentValidation: Display: Validating /Script/AIModule.BehaviorTree /Game/SurvivalFPS/AI/BT_EnemyBT.BT_EnemyBT
+[2024.03.17-01.11.20:639][444]LogUObjectHash: Compacting FUObjectHashTables data took   2.00ms
+[2024.03.17-01.11.21:763][523]LogUObjectHash: Compacting FUObjectHashTables data took   1.11ms
+[2024.03.17-01.11.21:896][532]LogUObjectHash: Compacting FUObjectHashTables data took   0.54ms
+[2024.03.17-01.11.22:037][542]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
+[2024.03.17-01.11.23:662][651]LogUObjectHash: Compacting FUObjectHashTables data took   0.57ms
+[2024.03.17-01.11.24:913][741]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.03.17-01.11.24:931][741]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.03.17-01.11.24:932][741]PIE: New page: PIE session: TestingMap (Mar 16, 2024, 3:11:24 PM)
+[2024.03.17-01.11.24:932][741]LogPlayLevel: Creating play world package: /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap
+[2024.03.17-01.11.24:935][741]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003180s)
+[2024.03.17-01.11.24:935][741]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SurvivalFPS/Maps/TestingMap.TestingMap to /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap (0.003208s)
+[2024.03.17-01.11.24:949][741]LogUObjectHash: Compacting FUObjectHashTables data took   1.12ms
+[2024.03.17-01.11.24:951][741]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.03.17-01.11.24:951][741]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.03.17-01.11.24:952][741]LogAIModule: Creating AISystem for world TestingMap
+[2024.03.17-01.11.24:952][741]LogPlayLevel: PIE: World Init took: (0.000879s)
+[2024.03.17-01.11.24:952][741]LogAudio: Display: Creating Audio Device:                 Id: 16, Scope: Unique, Realtime: True
+[2024.03.17-01.11.24:952][741]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.03.17-01.11.24:952][741]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.03.17-01.11.24:952][741]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.03.17-01.11.24:952][741]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.03.17-01.11.24:952][741]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.03.17-01.11.24:952][741]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.03.17-01.11.24:952][741]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.03.17-01.11.24:952][741]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.03.17-01.11.24:953][741]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.03.17-01.11.24:953][741]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.03.17-01.11.24:953][741]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.03.17-01.11.24:954][741]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.03.17-01.11.24:982][741]LogAudioMixer: Display: Using Audio Hardware Device SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)
+[2024.03.17-01.11.24:983][741]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.03.17-01.11.24:983][741]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.03.17-01.11.24:983][741]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.03.17-01.11.24:983][741]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=16
+[2024.03.17-01.11.24:983][741]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=16
+[2024.03.17-01.11.24:985][741]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=16
+[2024.03.17-01.11.24:985][741]LogInit: FAudioDevice initialized with ID 16.
+[2024.03.17-01.11.24:985][741]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=16
+[2024.03.17-01.11.24:985][741]LogAudio: Display: Audio Device (ID: 16) registered with world 'TestingMap'.
+[2024.03.17-01.11.24:985][741]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 16
+[2024.03.17-01.11.24:988][741]LogLoad: Game class is 'BP_SurvivalFPSGamemode_C'
+[2024.03.17-01.11.24:990][741]LogWorld: Bringing World /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap up for play (max tick rate 0) at 2024.03.16-20.11.24
+[2024.03.17-01.11.24:991][741]LogWorld: Bringing up level for play took: 0.002003
+[2024.03.17-01.11.24:993][741]LogOnline: OSS: Created online subsystem instance for: :Context_66
+[2024.03.17-01.11.24:995][741]LogTemp: Warning: BeginPlay
+[2024.03.17-01.11.24:995][741]LogActor: Warning: BP_Pistol_C /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap:PersistentLevel.BP_Pistol_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.03.17-01.11.24:996][741]LogEnhancedInput: Warning: Called AddMappingContext with a null Mapping Context! No changes have been applied.
+[2024.03.17-01.11.24:996][741]PIE: Server logged in
+[2024.03.17-01.11.24:997][741]PIE: Play in editor total start time 0.073 seconds.
+[2024.03.17-01.11.54:215][385]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.03.17-01.11.54:216][385]LogWorld: BeginTearingDown for /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap
+[2024.03.17-01.11.54:216][385]LogWorld: UWorld::CleanupWorld for TestingMap, bSessionEnded=true, bCleanupResources=true
+[2024.03.17-01.11.54:216][385]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.11.54:219][385]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.03.17-01.11.54:224][385]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.11.54:237][385]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.03.17-01.11.54:237][385]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 16
+[2024.03.17-01.11.54:237][385]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=16
+[2024.03.17-01.11.54:239][385]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=16
+[2024.03.17-01.11.54:246][385]LogUObjectHash: Compacting FUObjectHashTables data took   1.30ms
+[2024.03.17-01.11.54:394][386]LogPlayLevel: Display: Destroying online subsystem :Context_66
+[2024.03.17-01.12.08:223][484]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/SurvivalFPS/Blueprints/BP_Pistol.BP_Pistol
+[2024.03.17-01.12.08:224][484]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.03.17-01.12.08:224][484]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.03.17-01.12.08:344][484]LogActor: Warning: BP_Pistol_C /Engine/Transient.World_51:PersistentLevel.BP_Pistol_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.03.17-01.12.10:211][689]LogWorld: UWorld::CleanupWorld for World_51, bSessionEnded=true, bCleanupResources=true
+[2024.03.17-01.12.10:211][689]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.12.10:245][689]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/SurvivalFPS/Blueprints/BP_Pistol.BP_Pistol
+[2024.03.17-01.12.10:246][689]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.03.17-01.12.10:246][689]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.03.17-01.12.10:386][689]LogActor: Warning: BP_Pistol_C /Engine/Transient.World_52:PersistentLevel.BP_Pistol_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.03.17-01.12.19:059][636]LogAssetEditorSubsystem: Opening Asset editor for SoundWave /Game/SurvivalFPS/Sounds/Sounds/GunEmpty.GunEmpty
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: request failed, libcurl error: 65 (Send failed since rewinding of the data stream failed)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 0 (Found bundle for host: 0xaf160160ab0 [serially])
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 1 (Re-using existing connection with host datarouter.ol.epicgames.com)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 2 (We are completely uploaded and fine)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 3 (TLSv1.2 (IN), TLS alert, close notify (256):)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 4 (Connection died, retrying a fresh connect (retry count: 1))
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 5 (state.rewindbeforesend = TRUE)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 6 (Closing connection)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 7 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 8 (Issue another request to this URL: 'https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream')
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 9 (  Trying 54.92.166.11:443...)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 10 (Connected to datarouter.ol.epicgames.com (54.92.166.11) port 443)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 11 (ALPN: curl offers http/1.1)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 12 (SSL reusing session ID)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 13 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 14 (TLSv1.3 (IN), TLS handshake, Server hello (2):)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 15 (TLSv1.2 (IN), TLS handshake, Certificate (11):)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 16 (TLSv1.2 (IN), TLS handshake, Server key exchange (12):)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 17 (TLSv1.2 (IN), TLS handshake, Server finished (14):)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 18 (TLSv1.2 (OUT), TLS handshake, Client key exchange (16):)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 19 (TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 20 (TLSv1.2 (OUT), TLS handshake, Finished (20):)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 21 (TLSv1.2 (IN), TLS handshake, Finished (20):)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 22 (old SSL session ID is stale, removing)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 23 (SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 24 (ALPN: server accepted http/1.1)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 25 (Server certificate:)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 26 ( subject: CN=datarouter.cfef.live.use1a.on.epicgames.com)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 27 ( start date: Mar  4 00:00:00 2024 GMT)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 28 ( expire date: Apr  2 23:59:59 2025 GMT)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 29 ( subjectAltName: host "datarouter.ol.epicgames.com" matched cert's "datarouter.ol.epicgames.com")
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 30 ( issuer: C=US; O=Amazon; CN=Amazon RSA 2048 M03)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 31 ( SSL certificate verify ok.)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 32 (using HTTP/1.1)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 33 (necessary data rewind wasn't possible)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 34 (Closing connection)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: 00000AF2066E8C00: libcurl info message cache 35 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.14.51:812][713]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.03.17-01.15.50:265][752]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.03.17-01.16.00:003][376]LogLiveCoding: Display:    Creating library F:\Git\UE\5.0_Project\5.0_SurvivalProject\FPS_Survival\Binaries\Win64\UnrealEditor-FPS_Survival-Win64-DebugGame.patch_5.lib and object F:\Git\UE\5.0_Project\5.0_SurvivalProject\FPS_Survival\Binaries\Win64\UnrealEditor-FPS_Survival-Win64-DebugGame.patch_5.exp
+[2024.03.17-01.16.00:529][379]LogUObjectHash: Compacting FUObjectHashTables data took   1.17ms
+[2024.03.17-01.16.01:416][380]Display: Reload/Re-instancing Complete: No object changes detected
+[2024.03.17-01.16.01:416][380]LogLiveCoding: Display: Live coding succeeded
+[2024.03.17-01.16.09:144][889]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.03.17-01.16.09:167][889]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.03.17-01.16.09:167][889]PIE: New page: PIE session: TestingMap (Mar 16, 2024, 3:16:09 PM)
+[2024.03.17-01.16.09:199][889]LogPlayLevel: Creating play world package: /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap
+[2024.03.17-01.16.09:203][889]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003319s)
+[2024.03.17-01.16.09:203][889]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SurvivalFPS/Maps/TestingMap.TestingMap to /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap (0.003359s)
+[2024.03.17-01.16.09:268][889]LogUObjectHash: Compacting FUObjectHashTables data took   1.47ms
+[2024.03.17-01.16.09:276][889]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.03.17-01.16.09:276][889]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.03.17-01.16.09:276][889]LogAIModule: Creating AISystem for world TestingMap
+[2024.03.17-01.16.09:277][889]LogPlayLevel: PIE: World Init took: (0.000969s)
+[2024.03.17-01.16.09:277][889]LogAudio: Display: Creating Audio Device:                 Id: 17, Scope: Unique, Realtime: True
+[2024.03.17-01.16.09:277][889]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.03.17-01.16.09:277][889]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.03.17-01.16.09:277][889]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.03.17-01.16.09:277][889]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.03.17-01.16.09:277][889]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.03.17-01.16.09:277][889]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.03.17-01.16.09:277][889]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.03.17-01.16.09:277][889]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.03.17-01.16.09:277][889]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.03.17-01.16.09:277][889]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.03.17-01.16.09:277][889]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.03.17-01.16.09:279][889]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.03.17-01.16.09:306][889]LogAudioMixer: Display: Using Audio Hardware Device SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)
+[2024.03.17-01.16.09:307][889]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.03.17-01.16.09:307][889]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.03.17-01.16.09:307][889]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.03.17-01.16.09:307][889]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=17
+[2024.03.17-01.16.09:307][889]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=17
+[2024.03.17-01.16.09:309][889]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=17
+[2024.03.17-01.16.09:309][889]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=17
+[2024.03.17-01.16.09:310][889]LogInit: FAudioDevice initialized with ID 17.
+[2024.03.17-01.16.09:310][889]LogAudio: Display: Audio Device (ID: 17) registered with world 'TestingMap'.
+[2024.03.17-01.16.09:310][889]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 17
+[2024.03.17-01.16.09:312][889]LogLoad: Game class is 'BP_SurvivalFPSGamemode_C'
+[2024.03.17-01.16.09:314][889]LogWorld: Bringing World /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap up for play (max tick rate 0) at 2024.03.16-20.16.09
+[2024.03.17-01.16.09:314][889]LogWorld: Bringing up level for play took: 0.001859
+[2024.03.17-01.16.09:316][889]LogOnline: OSS: Created online subsystem instance for: :Context_69
+[2024.03.17-01.16.09:318][889]LogTemp: Warning: BeginPlay
+[2024.03.17-01.16.09:318][889]LogActor: Warning: BP_Pistol_C /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap:PersistentLevel.BP_Pistol_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.03.17-01.16.09:319][889]LogEnhancedInput: Warning: Called AddMappingContext with a null Mapping Context! No changes have been applied.
+[2024.03.17-01.16.09:319][889]PIE: Server logged in
+[2024.03.17-01.16.09:320][889]PIE: Play in editor total start time 0.164 seconds.
+[2024.03.17-01.16.24:125][224]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.03.17-01.16.24:125][224]LogWorld: BeginTearingDown for /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap
+[2024.03.17-01.16.24:125][224]LogWorld: UWorld::CleanupWorld for TestingMap, bSessionEnded=true, bCleanupResources=true
+[2024.03.17-01.16.24:126][224]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.16.24:129][224]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.03.17-01.16.24:134][224]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.16.24:162][224]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.03.17-01.16.24:162][224]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 17
+[2024.03.17-01.16.24:162][224]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=17
+[2024.03.17-01.16.24:164][224]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=17
+[2024.03.17-01.16.24:168][224]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.03.17-01.16.24:170][224]LogUObjectHash: Compacting FUObjectHashTables data took   1.28ms
+[2024.03.17-01.16.24:321][225]LogPlayLevel: Display: Destroying online subsystem :Context_69
+[2024.03.17-01.16.25:292][296]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.03.17-01.16.25:312][296]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.03.17-01.16.25:312][296]PIE: New page: PIE session: TestingMap (Mar 16, 2024, 3:16:25 PM)
+[2024.03.17-01.16.25:312][296]LogPlayLevel: Creating play world package: /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap
+[2024.03.17-01.16.25:316][296]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003203s)
+[2024.03.17-01.16.25:316][296]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SurvivalFPS/Maps/TestingMap.TestingMap to /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap (0.003231s)
+[2024.03.17-01.16.25:331][296]LogUObjectHash: Compacting FUObjectHashTables data took   1.08ms
+[2024.03.17-01.16.25:335][296]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.03.17-01.16.25:335][296]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.03.17-01.16.25:335][296]LogAIModule: Creating AISystem for world TestingMap
+[2024.03.17-01.16.25:335][296]LogPlayLevel: PIE: World Init took: (0.000850s)
+[2024.03.17-01.16.25:335][296]LogAudio: Display: Creating Audio Device:                 Id: 18, Scope: Unique, Realtime: True
+[2024.03.17-01.16.25:336][296]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.03.17-01.16.25:336][296]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.03.17-01.16.25:336][296]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.03.17-01.16.25:336][296]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.03.17-01.16.25:336][296]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.03.17-01.16.25:336][296]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.03.17-01.16.25:336][296]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.03.17-01.16.25:336][296]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.03.17-01.16.25:336][296]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.03.17-01.16.25:336][296]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.03.17-01.16.25:336][296]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.03.17-01.16.25:338][296]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.03.17-01.16.25:365][296]LogAudioMixer: Display: Using Audio Hardware Device SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)
+[2024.03.17-01.16.25:365][296]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.03.17-01.16.25:365][296]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.03.17-01.16.25:365][296]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.03.17-01.16.25:365][296]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=18
+[2024.03.17-01.16.25:365][296]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=18
+[2024.03.17-01.16.25:367][296]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=18
+[2024.03.17-01.16.25:367][296]LogInit: FAudioDevice initialized with ID 18.
+[2024.03.17-01.16.25:367][296]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=18
+[2024.03.17-01.16.25:367][296]LogAudio: Display: Audio Device (ID: 18) registered with world 'TestingMap'.
+[2024.03.17-01.16.25:367][296]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 18
+[2024.03.17-01.16.25:370][296]LogLoad: Game class is 'BP_SurvivalFPSGamemode_C'
+[2024.03.17-01.16.25:371][296]LogWorld: Bringing World /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap up for play (max tick rate 0) at 2024.03.16-20.16.25
+[2024.03.17-01.16.25:372][296]LogWorld: Bringing up level for play took: 0.001961
+[2024.03.17-01.16.25:374][296]LogOnline: OSS: Created online subsystem instance for: :Context_70
+[2024.03.17-01.16.25:375][296]LogTemp: Warning: BeginPlay
+[2024.03.17-01.16.25:376][296]LogActor: Warning: BP_Pistol_C /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap:PersistentLevel.BP_Pistol_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.03.17-01.16.25:376][296]LogEnhancedInput: Warning: Called AddMappingContext with a null Mapping Context! No changes have been applied.
+[2024.03.17-01.16.25:376][296]PIE: Server logged in
+[2024.03.17-01.16.25:377][296]PIE: Play in editor total start time 0.073 seconds.
+[2024.03.17-01.16.30:195][717]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.03.17-01.16.30:195][717]LogWorld: BeginTearingDown for /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap
+[2024.03.17-01.16.30:195][717]LogWorld: UWorld::CleanupWorld for TestingMap, bSessionEnded=true, bCleanupResources=true
+[2024.03.17-01.16.30:196][717]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.16.30:199][717]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.03.17-01.16.30:204][717]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.16.30:218][717]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.03.17-01.16.30:218][717]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 18
+[2024.03.17-01.16.30:218][717]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=18
+[2024.03.17-01.16.30:220][717]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=18
+[2024.03.17-01.16.30:226][717]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2024.03.17-01.16.30:371][718]LogPlayLevel: Display: Destroying online subsystem :Context_70
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: request failed, libcurl error: 65 (Send failed since rewinding of the data stream failed)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 0 (Found bundle for host: 0xaf160160f30 [serially])
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 1 (Re-using existing connection with host datarouter.ol.epicgames.com)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 2 (We are completely uploaded and fine)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 3 (TLSv1.2 (IN), TLS alert, close notify (256):)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 4 (Connection died, retrying a fresh connect (retry count: 1))
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 5 (state.rewindbeforesend = TRUE)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 6 (Closing connection)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 7 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 8 (Issue another request to this URL: 'https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream')
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 9 (  Trying 18.205.228.249:443...)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 10 (Connected to datarouter.ol.epicgames.com (18.205.228.249) port 443)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 11 (ALPN: curl offers http/1.1)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 12 (SSL reusing session ID)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 13 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 14 (TLSv1.3 (IN), TLS handshake, Server hello (2):)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 15 (TLSv1.2 (IN), TLS handshake, Certificate (11):)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 16 (TLSv1.2 (IN), TLS handshake, Server key exchange (12):)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 17 (TLSv1.2 (IN), TLS handshake, Server finished (14):)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 18 (TLSv1.2 (OUT), TLS handshake, Client key exchange (16):)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 19 (TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 20 (TLSv1.2 (OUT), TLS handshake, Finished (20):)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 21 (TLSv1.2 (IN), TLS handshake, Finished (20):)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 22 (old SSL session ID is stale, removing)
+[2024.03.17-01.17.51:827][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 23 (SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256)
+[2024.03.17-01.17.51:828][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 24 (ALPN: server accepted http/1.1)
+[2024.03.17-01.17.51:828][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 25 (Server certificate:)
+[2024.03.17-01.17.51:828][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 26 ( subject: CN=datarouter.cfef.live.use1a.on.epicgames.com)
+[2024.03.17-01.17.51:828][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 27 ( start date: Mar  4 00:00:00 2024 GMT)
+[2024.03.17-01.17.51:828][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 28 ( expire date: Apr  2 23:59:59 2025 GMT)
+[2024.03.17-01.17.51:828][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 29 ( subjectAltName: host "datarouter.ol.epicgames.com" matched cert's "datarouter.ol.epicgames.com")
+[2024.03.17-01.17.51:828][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 30 ( issuer: C=US; O=Amazon; CN=Amazon RSA 2048 M03)
+[2024.03.17-01.17.51:828][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 31 ( SSL certificate verify ok.)
+[2024.03.17-01.17.51:828][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 32 (using HTTP/1.1)
+[2024.03.17-01.17.51:828][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 33 (necessary data rewind wasn't possible)
+[2024.03.17-01.17.51:828][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 34 (Closing connection)
+[2024.03.17-01.17.51:828][512]LogHttp: Warning: 00000AF211245500: libcurl info message cache 35 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.17.51:828][512]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.03.17-01.22.51:808][370]LogHttp: Warning: 00000AF1CCCFE600: request failed, libcurl error: 65 (Send failed since rewinding of the data stream failed)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 0 (Found bundle for host: 0xaf160160c60 [serially])
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 1 (Re-using existing connection with host datarouter.ol.epicgames.com)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 2 (We are completely uploaded and fine)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 3 (TLSv1.2 (IN), TLS alert, close notify (256):)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 4 (Connection died, retrying a fresh connect (retry count: 1))
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 5 (state.rewindbeforesend = TRUE)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 6 (Closing connection)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 7 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 8 (Issue another request to this URL: 'https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream')
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 9 (  Trying 54.172.164.248:443...)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 10 (Connected to datarouter.ol.epicgames.com (54.172.164.248) port 443)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 11 (ALPN: curl offers http/1.1)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 12 (SSL reusing session ID)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 13 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 14 (TLSv1.3 (IN), TLS handshake, Server hello (2):)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 15 (TLSv1.2 (IN), TLS handshake, Certificate (11):)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 16 (TLSv1.2 (IN), TLS handshake, Server key exchange (12):)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 17 (TLSv1.2 (IN), TLS handshake, Server finished (14):)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 18 (TLSv1.2 (OUT), TLS handshake, Client key exchange (16):)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 19 (TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 20 (TLSv1.2 (OUT), TLS handshake, Finished (20):)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 21 (TLSv1.2 (IN), TLS handshake, Finished (20):)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 22 (old SSL session ID is stale, removing)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 23 (SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 24 (ALPN: server accepted http/1.1)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 25 (Server certificate:)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 26 ( subject: CN=datarouter.cfef.live.use1a.on.epicgames.com)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 27 ( start date: Mar  4 00:00:00 2024 GMT)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 28 ( expire date: Apr  2 23:59:59 2025 GMT)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 29 ( subjectAltName: host "datarouter.ol.epicgames.com" matched cert's "datarouter.ol.epicgames.com")
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 30 ( issuer: C=US; O=Amazon; CN=Amazon RSA 2048 M03)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 31 ( SSL certificate verify ok.)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 32 (using HTTP/1.1)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 33 (necessary data rewind wasn't possible)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 34 (Closing connection)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: 00000AF1CCCFE600: libcurl info message cache 35 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.22.51:809][370]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: request failed, libcurl error: 65 (Send failed since rewinding of the data stream failed)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 0 (Found bundle for host: 0xaf160160b10 [serially])
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 1 (Re-using existing connection with host datarouter.ol.epicgames.com)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 2 (We are completely uploaded and fine)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 3 (TLSv1.2 (IN), TLS alert, close notify (256):)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 4 (Connection died, retrying a fresh connect (retry count: 1))
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 5 (state.rewindbeforesend = TRUE)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 6 (Closing connection)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 7 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 8 (Issue another request to this URL: 'https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream')
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 9 (  Trying 3.214.142.119:443...)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 10 (Connected to datarouter.ol.epicgames.com (3.214.142.119) port 443)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 11 (ALPN: curl offers http/1.1)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 12 (SSL reusing session ID)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 13 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 14 (TLSv1.3 (IN), TLS handshake, Server hello (2):)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 15 (TLSv1.2 (IN), TLS handshake, Certificate (11):)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 16 (TLSv1.2 (IN), TLS handshake, Server key exchange (12):)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 17 (TLSv1.2 (IN), TLS handshake, Server finished (14):)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 18 (TLSv1.2 (OUT), TLS handshake, Client key exchange (16):)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 19 (TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 20 (TLSv1.2 (OUT), TLS handshake, Finished (20):)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 21 (TLSv1.2 (IN), TLS handshake, Finished (20):)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 22 (old SSL session ID is stale, removing)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 23 (SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 24 (ALPN: server accepted http/1.1)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 25 (Server certificate:)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 26 ( subject: CN=datarouter.cfef.live.use1a.on.epicgames.com)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 27 ( start date: Mar  4 00:00:00 2024 GMT)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 28 ( expire date: Apr  2 23:59:59 2025 GMT)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 29 ( subjectAltName: host "datarouter.ol.epicgames.com" matched cert's "datarouter.ol.epicgames.com")
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 30 ( issuer: C=US; O=Amazon; CN=Amazon RSA 2048 M03)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 31 ( SSL certificate verify ok.)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 32 (using HTTP/1.1)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 33 (necessary data rewind wasn't possible)
+[2024.03.17-01.26.51:825][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 34 (Closing connection)
+[2024.03.17-01.26.51:826][507]LogHttp: Warning: 00000AF1CCCFB400: libcurl info message cache 35 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.26.51:826][507]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: request failed, libcurl error: 65 (Send failed since rewinding of the data stream failed)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 0 (Found bundle for host: 0xaf160160fc0 [serially])
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 1 (Re-using existing connection with host datarouter.ol.epicgames.com)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 2 (We are completely uploaded and fine)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 3 (TLSv1.2 (IN), TLS alert, close notify (256):)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 4 (Connection died, retrying a fresh connect (retry count: 1))
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 5 (state.rewindbeforesend = TRUE)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 6 (Closing connection)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 7 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 8 (Issue another request to this URL: 'https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream')
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 9 (  Trying 35.171.37.243:443...)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 10 (Connected to datarouter.ol.epicgames.com (35.171.37.243) port 443)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 11 (ALPN: curl offers http/1.1)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 12 (SSL reusing session ID)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 13 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 14 (TLSv1.3 (IN), TLS handshake, Server hello (2):)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 15 (TLSv1.2 (IN), TLS handshake, Certificate (11):)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 16 (TLSv1.2 (IN), TLS handshake, Server key exchange (12):)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 17 (TLSv1.2 (IN), TLS handshake, Server finished (14):)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 18 (TLSv1.2 (OUT), TLS handshake, Client key exchange (16):)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 19 (TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 20 (TLSv1.2 (OUT), TLS handshake, Finished (20):)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 21 (TLSv1.2 (IN), TLS handshake, Finished (20):)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 22 (old SSL session ID is stale, removing)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 23 (SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 24 (ALPN: server accepted http/1.1)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 25 (Server certificate:)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 26 ( subject: CN=datarouter.cfef.live.use1a.on.epicgames.com)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 27 ( start date: Mar  4 00:00:00 2024 GMT)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 28 ( expire date: Apr  2 23:59:59 2025 GMT)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 29 ( subjectAltName: host "datarouter.ol.epicgames.com" matched cert's "datarouter.ol.epicgames.com")
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 30 ( issuer: C=US; O=Amazon; CN=Amazon RSA 2048 M03)
+[2024.03.17-01.30.51:827][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 31 ( SSL certificate verify ok.)
+[2024.03.17-01.30.51:828][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 32 (using HTTP/1.1)
+[2024.03.17-01.30.51:828][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 33 (necessary data rewind wasn't possible)
+[2024.03.17-01.30.51:828][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 34 (Closing connection)
+[2024.03.17-01.30.51:828][669]LogHttp: Warning: 00000AF1CCCF9600: libcurl info message cache 35 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.30.51:828][669]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: request failed, libcurl error: 65 (Send failed since rewinding of the data stream failed)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 0 (Found bundle for host: 0xaf1601609c0 [serially])
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 1 (Re-using existing connection with host datarouter.ol.epicgames.com)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 2 (We are completely uploaded and fine)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 3 (TLSv1.2 (IN), TLS alert, close notify (256):)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 4 (Connection died, retrying a fresh connect (retry count: 1))
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 5 (state.rewindbeforesend = TRUE)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 6 (Closing connection)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 7 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 8 (Issue another request to this URL: 'https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream')
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 9 (  Trying 3.227.205.112:443...)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 10 (Connected to datarouter.ol.epicgames.com (3.227.205.112) port 443)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 11 (ALPN: curl offers http/1.1)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 12 (SSL reusing session ID)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 13 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 14 (TLSv1.3 (IN), TLS handshake, Server hello (2):)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 15 (TLSv1.2 (IN), TLS handshake, Certificate (11):)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 16 (TLSv1.2 (IN), TLS handshake, Server key exchange (12):)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 17 (TLSv1.2 (IN), TLS handshake, Server finished (14):)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 18 (TLSv1.2 (OUT), TLS handshake, Client key exchange (16):)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 19 (TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 20 (TLSv1.2 (OUT), TLS handshake, Finished (20):)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 21 (TLSv1.2 (IN), TLS handshake, Finished (20):)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 22 (old SSL session ID is stale, removing)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 23 (SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 24 (ALPN: server accepted http/1.1)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 25 (Server certificate:)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 26 ( subject: CN=datarouter.cfef.live.use1a.on.epicgames.com)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 27 ( start date: Mar  4 00:00:00 2024 GMT)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 28 ( expire date: Apr  2 23:59:59 2025 GMT)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 29 ( subjectAltName: host "datarouter.ol.epicgames.com" matched cert's "datarouter.ol.epicgames.com")
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 30 ( issuer: C=US; O=Amazon; CN=Amazon RSA 2048 M03)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 31 ( SSL certificate verify ok.)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 32 (using HTTP/1.1)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 33 (necessary data rewind wasn't possible)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 34 (Closing connection)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: 00000AF1CCCF8200: libcurl info message cache 35 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.34.51:825][724]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.03.17-01.35.24:550][238]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.03.17-01.35.24:573][238]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.03.17-01.35.24:573][238]PIE: New page: PIE session: TestingMap (Mar 16, 2024, 3:35:24 PM)
+[2024.03.17-01.35.24:573][238]LogPlayLevel: Creating play world package: /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap
+[2024.03.17-01.35.24:578][238]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004724s)
+[2024.03.17-01.35.24:578][238]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SurvivalFPS/Maps/TestingMap.TestingMap to /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap (0.004758s)
+[2024.03.17-01.35.24:595][238]LogUObjectHash: Compacting FUObjectHashTables data took   2.11ms
+[2024.03.17-01.35.24:601][238]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.03.17-01.35.24:601][238]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.03.17-01.35.24:601][238]LogAIModule: Creating AISystem for world TestingMap
+[2024.03.17-01.35.24:602][238]LogPlayLevel: PIE: World Init took: (0.001110s)
+[2024.03.17-01.35.24:602][238]LogAudio: Display: Creating Audio Device:                 Id: 19, Scope: Unique, Realtime: True
+[2024.03.17-01.35.24:602][238]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.03.17-01.35.24:602][238]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.03.17-01.35.24:602][238]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.03.17-01.35.24:602][238]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.03.17-01.35.24:602][238]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.03.17-01.35.24:602][238]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.03.17-01.35.24:602][238]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.03.17-01.35.24:602][238]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.03.17-01.35.24:602][238]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.03.17-01.35.24:602][238]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.03.17-01.35.24:602][238]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.03.17-01.35.24:605][238]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.03.17-01.35.24:641][238]LogAudioMixer: Display: Using Audio Hardware Device SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)
+[2024.03.17-01.35.24:641][238]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.03.17-01.35.24:641][238]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.03.17-01.35.24:641][238]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.03.17-01.35.24:642][238]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=19
+[2024.03.17-01.35.24:642][238]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=19
+[2024.03.17-01.35.24:644][238]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=19
+[2024.03.17-01.35.24:644][238]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=19
+[2024.03.17-01.35.24:644][238]LogInit: FAudioDevice initialized with ID 19.
+[2024.03.17-01.35.24:644][238]LogAudio: Display: Audio Device (ID: 19) registered with world 'TestingMap'.
+[2024.03.17-01.35.24:644][238]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 19
+[2024.03.17-01.35.24:648][238]LogLoad: Game class is 'BP_SurvivalFPSGamemode_C'
+[2024.03.17-01.35.24:650][238]LogWorld: Bringing World /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap up for play (max tick rate 0) at 2024.03.16-20.35.24
+[2024.03.17-01.35.24:651][238]LogWorld: Bringing up level for play took: 0.002709
+[2024.03.17-01.35.24:653][238]LogOnline: OSS: Created online subsystem instance for: :Context_71
+[2024.03.17-01.35.24:655][238]LogTemp: Warning: BeginPlay
+[2024.03.17-01.35.24:655][238]LogActor: Warning: BP_Pistol_C /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap:PersistentLevel.BP_Pistol_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.03.17-01.35.24:656][238]LogEnhancedInput: Warning: Called AddMappingContext with a null Mapping Context! No changes have been applied.
+[2024.03.17-01.35.24:656][238]PIE: Server logged in
+[2024.03.17-01.35.24:657][238]PIE: Play in editor total start time 0.091 seconds.
+[2024.03.17-01.35.32:285][910]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.03.17-01.35.32:285][910]LogWorld: BeginTearingDown for /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap
+[2024.03.17-01.35.32:285][910]LogWorld: UWorld::CleanupWorld for TestingMap, bSessionEnded=true, bCleanupResources=true
+[2024.03.17-01.35.32:286][910]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.35.32:289][910]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.03.17-01.35.32:294][910]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.35.32:309][910]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.03.17-01.35.32:309][910]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 19
+[2024.03.17-01.35.32:309][910]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=19
+[2024.03.17-01.35.32:311][910]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=19
+[2024.03.17-01.35.32:317][910]LogUObjectHash: Compacting FUObjectHashTables data took   1.17ms
+[2024.03.17-01.35.32:465][911]LogPlayLevel: Display: Destroying online subsystem :Context_71
+[2024.03.17-01.39.08:276][277]LogDerivedDataCache: C:/Users/fjaco/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:22.135 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 11385 files in 14038 folders with total size 2178 MiB.
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: request failed, libcurl error: 65 (Send failed since rewinding of the data stream failed)
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 0 (Found bundle for host: 0xaf160160810 [serially])
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 1 (Re-using existing connection with host datarouter.ol.epicgames.com)
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 2 (We are completely uploaded and fine)
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 3 (TLSv1.2 (IN), TLS alert, close notify (256):)
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 4 (Connection died, retrying a fresh connect (retry count: 1))
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 5 (state.rewindbeforesend = TRUE)
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 6 (Closing connection)
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 7 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 8 (Issue another request to this URL: 'https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream')
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 9 (  Trying 54.172.164.248:443...)
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 10 (Connected to datarouter.ol.epicgames.com (54.172.164.248) port 443)
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 11 (ALPN: curl offers http/1.1)
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 12 (SSL reusing session ID)
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 13 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 14 (TLSv1.3 (IN), TLS handshake, Server hello (2):)
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 15 (TLSv1.2 (IN), TLS handshake, Certificate (11):)
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 16 (TLSv1.2 (IN), TLS handshake, Server key exchange (12):)
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 17 (TLSv1.2 (IN), TLS handshake, Server finished (14):)
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 18 (TLSv1.2 (OUT), TLS handshake, Client key exchange (16):)
+[2024.03.17-01.40.51:813][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 19 (TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):)
+[2024.03.17-01.40.51:814][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 20 (TLSv1.2 (OUT), TLS handshake, Finished (20):)
+[2024.03.17-01.40.51:814][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 21 (TLSv1.2 (IN), TLS handshake, Finished (20):)
+[2024.03.17-01.40.51:814][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 22 (old SSL session ID is stale, removing)
+[2024.03.17-01.40.51:814][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 23 (SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256)
+[2024.03.17-01.40.51:814][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 24 (ALPN: server accepted http/1.1)
+[2024.03.17-01.40.51:814][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 25 (Server certificate:)
+[2024.03.17-01.40.51:814][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 26 ( subject: CN=datarouter.cfef.live.use1a.on.epicgames.com)
+[2024.03.17-01.40.51:814][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 27 ( start date: Mar  4 00:00:00 2024 GMT)
+[2024.03.17-01.40.51:814][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 28 ( expire date: Apr  2 23:59:59 2025 GMT)
+[2024.03.17-01.40.51:814][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 29 ( subjectAltName: host "datarouter.ol.epicgames.com" matched cert's "datarouter.ol.epicgames.com")
+[2024.03.17-01.40.51:814][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 30 ( issuer: C=US; O=Amazon; CN=Amazon RSA 2048 M03)
+[2024.03.17-01.40.51:814][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 31 ( SSL certificate verify ok.)
+[2024.03.17-01.40.51:814][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 32 (using HTTP/1.1)
+[2024.03.17-01.40.51:814][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 33 (necessary data rewind wasn't possible)
+[2024.03.17-01.40.51:814][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 34 (Closing connection)
+[2024.03.17-01.40.51:814][228]LogHttp: Warning: 00000AF201864B00: libcurl info message cache 35 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.40.51:814][228]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.03.17-01.44.51:819][726]LogHttp: Warning: 00000AF20186BE00: request failed, libcurl error: 65 (Send failed since rewinding of the data stream failed)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 0 (Found bundle for host: 0xaf160160ed0 [serially])
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 1 (Re-using existing connection with host datarouter.ol.epicgames.com)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 2 (We are completely uploaded and fine)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 3 (TLSv1.2 (IN), TLS alert, close notify (256):)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 4 (Connection died, retrying a fresh connect (retry count: 1))
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 5 (state.rewindbeforesend = TRUE)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 6 (Closing connection)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 7 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 8 (Issue another request to this URL: 'https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream')
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 9 (  Trying 3.219.64.240:443...)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 10 (Connected to datarouter.ol.epicgames.com (3.219.64.240) port 443)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 11 (ALPN: curl offers http/1.1)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 12 (SSL reusing session ID)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 13 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 14 (TLSv1.3 (IN), TLS handshake, Server hello (2):)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 15 (TLSv1.2 (IN), TLS handshake, Certificate (11):)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 16 (TLSv1.2 (IN), TLS handshake, Server key exchange (12):)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 17 (TLSv1.2 (IN), TLS handshake, Server finished (14):)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 18 (TLSv1.2 (OUT), TLS handshake, Client key exchange (16):)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 19 (TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 20 (TLSv1.2 (OUT), TLS handshake, Finished (20):)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 21 (TLSv1.2 (IN), TLS handshake, Finished (20):)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 22 (old SSL session ID is stale, removing)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 23 (SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 24 (ALPN: server accepted http/1.1)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 25 (Server certificate:)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 26 ( subject: CN=datarouter.cfef.live.use1a.on.epicgames.com)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 27 ( start date: Mar  4 00:00:00 2024 GMT)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 28 ( expire date: Apr  2 23:59:59 2025 GMT)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 29 ( subjectAltName: host "datarouter.ol.epicgames.com" matched cert's "datarouter.ol.epicgames.com")
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 30 ( issuer: C=US; O=Amazon; CN=Amazon RSA 2048 M03)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 31 ( SSL certificate verify ok.)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 32 (using HTTP/1.1)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 33 (necessary data rewind wasn't possible)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 34 (Closing connection)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: 00000AF20186BE00: libcurl info message cache 35 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.44.51:820][726]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.03.17-01.47.49:037][188]LogWindows: LaunchURL https://docs.unrealengine.com/5.3/en/BuildingWorlds/LevelEditor?utm_source=editor&utm_medium=docs&utm_campaign=help_menu
+[2024.03.17-01.47.55:080][578]LogContentBrowser: Attempting asset rename: Corpse_Alert_Death1 -> Corpse_Alert_Death_Trimmed
+[2024.03.17-01.47.55:108][578]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.03.17-01.47.55:170][578]LogSavePackage: Moving output files for package: /Game/CityofBrass_Enemies/Meshes/Enemy/Corpse/animation/Corpse_Alert_Death_Trimmed
+[2024.03.17-01.47.55:170][578]LogSavePackage: Moving '../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Saved/Corpse_Alert_Death_Trimmed2AD4BEBE413BD77B54C6F5BE1BD072C6.tmp' to '../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/CityofBrass_Enemies/Meshes/Enemy/Corpse/animation/Corpse_Alert_Death_Trimmed.uasset'
+[2024.03.17-01.47.55:201][578]LogFileHelpers: InternalPromptForCheckoutAndSave took 92 ms (total: 3.63 sec)
+[2024.03.17-01.47.55:226][578]LogUObjectHash: Compacting FUObjectHashTables data took   1.39ms
+[2024.03.17-01.47.55:246][578]LogUObjectHash: Compacting FUObjectHashTables data took   1.74ms
+[2024.03.17-01.47.55:262][578]LogUObjectHash: Compacting FUObjectHashTables data took   0.54ms
+[2024.03.17-01.47.55:265][578]AssetCheck: New page: Asset Save: Corpse_Alert_Death_Trimmed
+[2024.03.17-01.47.55:265][578]LogContentValidation: Display: Validating /Script/Engine.AnimSequence /Game/CityofBrass_Enemies/Meshes/Enemy/Corpse/animation/Corpse_Alert_Death_Trimmed.Corpse_Alert_Death_Trimmed
+[2024.03.17-01.47.59:969][908]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.03.17-01.48.00:011][908]LogSavePackage: Moving output files for package: /Game/SurvivalFPS/AI/Animations/Corpse_Alert_Death_Trimmed
+[2024.03.17-01.48.00:011][908]LogSavePackage: Moving '../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Saved/Corpse_Alert_Death_Trimmed63F3D86B43962DF13F038BA35CB07F18.tmp' to '../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/AI/Animations/Corpse_Alert_Death_Trimmed.uasset'
+[2024.03.17-01.48.00:040][908]LogFileHelpers: InternalPromptForCheckoutAndSave took 71 ms (total: 3.70 sec)
+[2024.03.17-01.48.00:082][908]LogUObjectHash: Compacting FUObjectHashTables data took   1.28ms
+[2024.03.17-01.48.00:098][908]LogUObjectHash: Compacting FUObjectHashTables data took   0.65ms
+[2024.03.17-01.48.00:112][908]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2024.03.17-01.48.00:126][908]AssetCheck: New page: Asset Save: Corpse_Alert_Death_Trimmed
+[2024.03.17-01.48.00:126][908]LogContentValidation: Display: Validating /Script/Engine.AnimSequence /Game/SurvivalFPS/AI/Animations/Corpse_Alert_Death_Trimmed.Corpse_Alert_Death_Trimmed
+[2024.03.17-01.48.27:973][826]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/SurvivalFPS/AI/Animations/Corpse_Alert_Death_Trimmed.Corpse_Alert_Death_Trimmed
+[2024.03.17-01.48.28:046][826]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.03.17-01.48.28:046][826]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.03.17-01.48.28:068][826]LogWorld: UWorld::CleanupWorld for World_41, bSessionEnded=true, bCleanupResources=true
+[2024.03.17-01.48.28:068][826]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.48.35:995][553]LogAnimationCompression: Display: Building compressed animation data for AnimSequence /Game/SurvivalFPS/AI/Animations/Corpse_Alert_Death_Trimmed.Corpse_Alert_Death_Trimmed
+[2024.03.17-01.48.35:999][553]LogAnimationCompression: Display: Storing compressed animation data for /Game/SurvivalFPS/AI/Animations/Corpse_Alert_Death_Trimmed.Corpse_Alert_Death_Trimmed, at AnimationSequence/6b9d86fb452990935b57990e2f5b6b16def2e986
+[2024.03.17-01.48.38:855][801]Cmd: TRANSACTION UNDO
+[2024.03.17-01.48.38:855][801]LogEditorTransaction: Undo Crop Animation Sequence
+[2024.03.17-01.48.38:859][801]LogAnimationCompression: Display: Building compressed animation data for AnimSequence /Game/SurvivalFPS/AI/Animations/Corpse_Alert_Death_Trimmed.Corpse_Alert_Death_Trimmed
+[2024.03.17-01.48.38:872][801]LogAnimationCompression: Display: Storing compressed animation data for /Game/SurvivalFPS/AI/Animations/Corpse_Alert_Death_Trimmed.Corpse_Alert_Death_Trimmed, at AnimationSequence/2bc5222e89ddda81fa034230ddc0cca35c7e0f10
+[2024.03.17-01.48.39:323][801]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_13:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2024.03.17-01.48.39:345][801]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_31:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2024.03.17-01.48.39:349][801]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_46:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2024.03.17-01.48.45:882][382]LogWorld: UWorld::CleanupWorld for World_53, bSessionEnded=true, bCleanupResources=true
+[2024.03.17-01.48.45:882][382]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.48.45:892][382]LogWorld: UWorld::CleanupWorld for World_31, bSessionEnded=true, bCleanupResources=true
+[2024.03.17-01.48.45:892][382]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.48.45:957][382]LogWorld: UWorld::CleanupWorld for World_32, bSessionEnded=true, bCleanupResources=true
+[2024.03.17-01.48.45:957][382]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.48.47:452][502]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/SurvivalFPS/AI/Animations/Corpse_Alert_Death_Trimmed.Corpse_Alert_Death_Trimmed
+[2024.03.17-01.48.47:452][502]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.03.17-01.48.47:452][502]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.03.17-01.48.47:460][502]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_54:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2024.03.17-01.48.47:691][502]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.03.17-01.48.47:691][502]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.03.17-01.48.47:871][502]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.03.17-01.48.47:871][502]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.03.17-01.48.47:888][502]LogViewport: Scene viewport resized to 1141x538, mode Windowed.
+[2024.03.17-01.48.47:928][502]LogContentBrowser: Verbose: The majority of assets in the view are of type: /Script/Engine.AnimSequence
+[2024.03.17-01.48.51:812][859]LogHttp: Warning: 00000AF2275D8700: request failed, libcurl error: 65 (Send failed since rewinding of the data stream failed)
+[2024.03.17-01.48.51:812][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 0 (Found bundle for host: 0xaf160160f60 [serially])
+[2024.03.17-01.48.51:812][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 1 (Re-using existing connection with host datarouter.ol.epicgames.com)
+[2024.03.17-01.48.51:812][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 2 (We are completely uploaded and fine)
+[2024.03.17-01.48.51:812][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 3 (TLSv1.2 (IN), TLS alert, close notify (256):)
+[2024.03.17-01.48.51:812][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 4 (Connection died, retrying a fresh connect (retry count: 1))
+[2024.03.17-01.48.51:812][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 5 (state.rewindbeforesend = TRUE)
+[2024.03.17-01.48.51:812][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 6 (Closing connection)
+[2024.03.17-01.48.51:812][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 7 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.48.51:812][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 8 (Issue another request to this URL: 'https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream')
+[2024.03.17-01.48.51:812][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 9 (  Trying 3.208.253.152:443...)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 10 (Connected to datarouter.ol.epicgames.com (3.208.253.152) port 443)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 11 (ALPN: curl offers http/1.1)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 12 (SSL reusing session ID)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 13 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 14 (TLSv1.3 (IN), TLS handshake, Server hello (2):)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 15 (TLSv1.2 (IN), TLS handshake, Certificate (11):)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 16 (TLSv1.2 (IN), TLS handshake, Server key exchange (12):)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 17 (TLSv1.2 (IN), TLS handshake, Server finished (14):)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 18 (TLSv1.2 (OUT), TLS handshake, Client key exchange (16):)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 19 (TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 20 (TLSv1.2 (OUT), TLS handshake, Finished (20):)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 21 (TLSv1.2 (IN), TLS handshake, Finished (20):)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 22 (old SSL session ID is stale, removing)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 23 (SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 24 (ALPN: server accepted http/1.1)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 25 (Server certificate:)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 26 ( subject: CN=datarouter.cfef.live.use1a.on.epicgames.com)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 27 ( start date: Mar  4 00:00:00 2024 GMT)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 28 ( expire date: Apr  2 23:59:59 2025 GMT)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 29 ( subjectAltName: host "datarouter.ol.epicgames.com" matched cert's "datarouter.ol.epicgames.com")
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 30 ( issuer: C=US; O=Amazon; CN=Amazon RSA 2048 M03)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 31 ( SSL certificate verify ok.)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 32 (using HTTP/1.1)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 33 (necessary data rewind wasn't possible)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 34 (Closing connection)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: 00000AF2275D8700: libcurl info message cache 35 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.48.51:813][859]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.03.17-01.48.53:107][982]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.03.17-01.48.53:164][982]LogSavePackage: Moving output files for package: /Game/SurvivalFPS/AI/Animations/Corpse_Alert_Death_Trimmed
+[2024.03.17-01.48.53:165][982]LogSavePackage: Moving '../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Saved/Corpse_Alert_Death_TrimmedDB061EE04B77E2482EA58184FD185926.tmp' to '../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/AI/Animations/Corpse_Alert_Death_Trimmed.uasset'
+[2024.03.17-01.48.53:174][982]LogFileHelpers: InternalPromptForCheckoutAndSave took 67 ms (total: 3.77 sec)
+[2024.03.17-01.48.53:175][982]AssetCheck: New page: Asset Save: Corpse_Alert_Death_Trimmed
+[2024.03.17-01.48.53:175][982]LogContentValidation: Display: Validating /Script/Engine.AnimSequence /Game/SurvivalFPS/AI/Animations/Corpse_Alert_Death_Trimmed.Corpse_Alert_Death_Trimmed
+[2024.03.17-01.48.53:443][  6]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.03.17-01.48.53:494][  6]LogSavePackage: Moving output files for package: /Game/SurvivalFPS/AI/Animations/Corpse_Alert_Death_Trimmed
+[2024.03.17-01.48.53:496][  6]LogSavePackage: Moving '../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Saved/Corpse_Alert_Death_Trimmed808E28534DC61F2761790985084F7426.tmp' to '../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/AI/Animations/Corpse_Alert_Death_Trimmed.uasset'
+[2024.03.17-01.48.53:504][  6]LogFileHelpers: InternalPromptForCheckoutAndSave took 60 ms (total: 3.83 sec)
+[2024.03.17-01.48.53:505][  6]AssetCheck: New page: Asset Save: Corpse_Alert_Death_Trimmed
+[2024.03.17-01.48.53:505][  6]LogContentValidation: Display: Validating /Script/Engine.AnimSequence /Game/SurvivalFPS/AI/Animations/Corpse_Alert_Death_Trimmed.Corpse_Alert_Death_Trimmed
+[2024.03.17-01.48.54:650][104]LogWorld: UWorld::CleanupWorld for World_56, bSessionEnded=true, bCleanupResources=true
+[2024.03.17-01.48.54:650][104]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.48.54:661][104]LogWorld: UWorld::CleanupWorld for World_54, bSessionEnded=true, bCleanupResources=true
+[2024.03.17-01.48.54:661][104]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.48.54:735][104]LogWorld: UWorld::CleanupWorld for World_55, bSessionEnded=true, bCleanupResources=true
+[2024.03.17-01.48.54:735][104]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.48.56:628][259]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/SurvivalFPS/AI/Animations/Corpse_Alert_Death_Trimmed.Corpse_Alert_Death_Trimmed
+[2024.03.17-01.48.56:628][259]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.03.17-01.48.56:628][259]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.03.17-01.48.56:635][259]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_57:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2024.03.17-01.48.56:865][259]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.03.17-01.48.56:865][259]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.03.17-01.48.57:048][259]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.03.17-01.48.57:048][259]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.03.17-01.48.57:065][259]LogViewport: Scene viewport resized to 1141x538, mode Windowed.
+[2024.03.17-01.48.57:106][259]LogContentBrowser: Verbose: The majority of assets in the view are of type: /Script/Engine.AnimSequence
+[2024.03.17-01.49.01:753][682]LogWorld: UWorld::CleanupWorld for World_59, bSessionEnded=true, bCleanupResources=true
+[2024.03.17-01.49.01:753][682]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.49.01:764][682]LogWorld: UWorld::CleanupWorld for World_57, bSessionEnded=true, bCleanupResources=true
+[2024.03.17-01.49.01:764][682]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.49.01:844][682]LogWorld: UWorld::CleanupWorld for World_58, bSessionEnded=true, bCleanupResources=true
+[2024.03.17-01.49.01:844][682]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.49.34:329][790]BlueprintLog: New page: Compile ABP_Enemy
+[2024.03.17-01.49.34:334][790]LogBlueprint: Warning: [AssetLog] F:\Git\UE\5.0_Project\5.0_SurvivalProject\FPS_Survival\Content\SurvivalFPS\AI\Animations\ABP_Enemy.uasset: [Compiler] Idle to Death  will never be taken, please connect something to  Can Enter Transition
+[2024.03.17-01.49.34:334][790]LogBlueprint: Warning: [AssetLog] F:\Git\UE\5.0_Project\5.0_SurvivalProject\FPS_Survival\Content\SurvivalFPS\AI\Animations\ABP_Enemy.uasset: [Compiler] Death to Idle  will never be taken, please connect something to  Can Enter Transition
+[2024.03.17-01.49.34:334][790]LogBlueprint: Warning: [AssetLog] F:\Git\UE\5.0_Project\5.0_SurvivalProject\FPS_Survival\Content\SurvivalFPS\AI\Animations\ABP_Enemy.uasset: [Compiler] Walk/Run to Death  will never be taken, please connect something to  Can Enter Transition
+[2024.03.17-01.49.34:334][790]LogBlueprint: Warning: [AssetLog] F:\Git\UE\5.0_Project\5.0_SurvivalProject\FPS_Survival\Content\SurvivalFPS\AI\Animations\ABP_Enemy.uasset: [Compiler] Death to Walk/Run  will never be taken, please connect something to  Can Enter Transition
+[2024.03.17-01.49.34:383][790]LogUObjectHash: Compacting FUObjectHashTables data took   1.28ms
+[2024.03.17-01.50.52:138][183]BlueprintLog: New page: Compile ABP_Enemy
+[2024.03.17-01.50.52:145][183]LogBlueprint: Warning: [AssetLog] F:\Git\UE\5.0_Project\5.0_SurvivalProject\FPS_Survival\Content\SurvivalFPS\AI\Animations\ABP_Enemy.uasset: [Compiler] Idle to Death  will never be taken, please connect something to  Can Enter Transition
+[2024.03.17-01.50.52:146][183]LogBlueprint: Warning: [AssetLog] F:\Git\UE\5.0_Project\5.0_SurvivalProject\FPS_Survival\Content\SurvivalFPS\AI\Animations\ABP_Enemy.uasset: [Compiler] Death to Idle  will never be taken, please connect something to  Can Enter Transition
+[2024.03.17-01.50.52:146][183]LogBlueprint: Warning: [AssetLog] F:\Git\UE\5.0_Project\5.0_SurvivalProject\FPS_Survival\Content\SurvivalFPS\AI\Animations\ABP_Enemy.uasset: [Compiler] Walk/Run to Death  will never be taken, please connect something to  Can Enter Transition
+[2024.03.17-01.50.52:146][183]LogBlueprint: Warning: [AssetLog] F:\Git\UE\5.0_Project\5.0_SurvivalProject\FPS_Survival\Content\SurvivalFPS\AI\Animations\ABP_Enemy.uasset: [Compiler] Death to Walk/Run  will never be taken, please connect something to  Can Enter Transition
+[2024.03.17-01.50.52:179][183]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2024.03.17-01.50.52:641][216]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.03.17-01.50.52:716][216]LogSavePackage: Moving output files for package: /Game/SurvivalFPS/AI/Animations/ABP_Enemy
+[2024.03.17-01.50.52:719][216]LogSavePackage: Moving '../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Saved/ABP_EnemyFB0FAFFD48D30121C1348F8603DB4D61.tmp' to '../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/AI/Animations/ABP_Enemy.uasset'
+[2024.03.17-01.50.52:728][216]LogFileHelpers: InternalPromptForCheckoutAndSave took 87 ms (total: 3.92 sec)
+[2024.03.17-01.50.52:730][216]AssetCheck: New page: Asset Save: ABP_Enemy
+[2024.03.17-01.50.52:730][216]LogContentValidation: Display: Validating /Script/Engine.AnimBlueprint /Game/SurvivalFPS/AI/Animations/ABP_Enemy.ABP_Enemy
+[2024.03.17-01.51.23:913][ 81]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.03.17-01.51.36:278][ 16]LogLiveCoding: Display:    Creating library F:\Git\UE\5.0_Project\5.0_SurvivalProject\FPS_Survival\Binaries\Win64\UnrealEditor-FPS_Survival-Win64-DebugGame.patch_6.lib and object F:\Git\UE\5.0_Project\5.0_SurvivalProject\FPS_Survival\Binaries\Win64\UnrealEditor-FPS_Survival-Win64-DebugGame.patch_6.exp
+[2024.03.17-01.51.36:823][ 19]LogClass: UPackage /Script/FPS_Survival Reload.
+[2024.03.17-01.51.36:823][ 19]LogClass: UClass Enemy Reload.
+[2024.03.17-01.51.36:825][ 19]LogClass: Could not find existing class Enemy in package /Script/FPS_Survival for reload, assuming new or modified class
+[2024.03.17-01.51.36:825][ 19]LogClass: Function HandleOnMontageEnded is new or belongs to a modified class.
+[2024.03.17-01.51.36:835][ 19]Re-instancing Enemy after reload.
+[2024.03.17-01.51.37:085][ 19]LogUObjectHash: Compacting FUObjectHashTables data took   1.36ms
+[2024.03.17-01.51.38:136][ 20]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 1 class unchanged
+[2024.03.17-01.51.38:136][ 20]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.03.17-01.51.58:851][754]BlueprintLog: New page: Compile ABP_Enemy
+[2024.03.17-01.51.58:857][754]LogBlueprint: Warning: [AssetLog] F:\Git\UE\5.0_Project\5.0_SurvivalProject\FPS_Survival\Content\SurvivalFPS\AI\Animations\ABP_Enemy.uasset: [Compiler] Idle to Death  will never be taken, please connect something to  Can Enter Transition
+[2024.03.17-01.51.58:857][754]LogBlueprint: Warning: [AssetLog] F:\Git\UE\5.0_Project\5.0_SurvivalProject\FPS_Survival\Content\SurvivalFPS\AI\Animations\ABP_Enemy.uasset: [Compiler] Death to Idle  will never be taken, please connect something to  Can Enter Transition
+[2024.03.17-01.51.58:857][754]LogBlueprint: Warning: [AssetLog] F:\Git\UE\5.0_Project\5.0_SurvivalProject\FPS_Survival\Content\SurvivalFPS\AI\Animations\ABP_Enemy.uasset: [Compiler] Walk/Run to Death  will never be taken, please connect something to  Can Enter Transition
+[2024.03.17-01.51.58:857][754]LogBlueprint: Warning: [AssetLog] F:\Git\UE\5.0_Project\5.0_SurvivalProject\FPS_Survival\Content\SurvivalFPS\AI\Animations\ABP_Enemy.uasset: [Compiler] Death to Walk/Run  will never be taken, please connect something to  Can Enter Transition
+[2024.03.17-01.51.58:949][754]LogUObjectHash: Compacting FUObjectHashTables data took   1.63ms
+[2024.03.17-01.52.44:757][314]BlueprintLog: New page: Compile ABP_Enemy
+[2024.03.17-01.52.44:830][314]LogUObjectHash: Compacting FUObjectHashTables data took   1.34ms
+[2024.03.17-01.52.45:797][393]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.03.17-01.52.45:896][393]LogSavePackage: Moving output files for package: /Game/SurvivalFPS/AI/Animations/ABP_Enemy
+[2024.03.17-01.52.45:898][393]LogSavePackage: Moving '../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Saved/ABP_Enemy126C0BC04A88315A45B3F9B216508424.tmp' to '../../../../../Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/AI/Animations/ABP_Enemy.uasset'
+[2024.03.17-01.52.45:909][393]LogFileHelpers: InternalPromptForCheckoutAndSave took 112 ms (total: 4.03 sec)
+[2024.03.17-01.52.45:911][393]AssetCheck: New page: Asset Save: ABP_Enemy
+[2024.03.17-01.52.45:911][393]LogContentValidation: Display: Validating /Script/Engine.AnimBlueprint /Game/SurvivalFPS/AI/Animations/ABP_Enemy.ABP_Enemy
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: request failed, libcurl error: 65 (Send failed since rewinding of the data stream failed)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 0 (Found bundle for host: 0xaf160160e70 [serially])
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 1 (Re-using existing connection with host datarouter.ol.epicgames.com)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 2 (We are completely uploaded and fine)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 3 (TLSv1.2 (IN), TLS alert, close notify (256):)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 4 (Connection died, retrying a fresh connect (retry count: 1))
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 5 (state.rewindbeforesend = TRUE)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 6 (Closing connection)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 7 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 8 (Issue another request to this URL: 'https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream')
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 9 (  Trying 3.214.142.119:443...)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 10 (Connected to datarouter.ol.epicgames.com (3.214.142.119) port 443)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 11 (ALPN: curl offers http/1.1)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 12 (SSL reusing session ID)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 13 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 14 (TLSv1.3 (IN), TLS handshake, Server hello (2):)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 15 (TLSv1.2 (IN), TLS handshake, Certificate (11):)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 16 (TLSv1.2 (IN), TLS handshake, Server key exchange (12):)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 17 (TLSv1.2 (IN), TLS handshake, Server finished (14):)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 18 (TLSv1.2 (OUT), TLS handshake, Client key exchange (16):)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 19 (TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 20 (TLSv1.2 (OUT), TLS handshake, Finished (20):)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 21 (TLSv1.2 (IN), TLS handshake, Finished (20):)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 22 (old SSL session ID is stale, removing)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 23 (SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 24 (ALPN: server accepted http/1.1)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 25 (Server certificate:)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 26 ( subject: CN=datarouter.cfef.live.use1a.on.epicgames.com)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 27 ( start date: Mar  4 00:00:00 2024 GMT)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 28 ( expire date: Apr  2 23:59:59 2025 GMT)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 29 ( subjectAltName: host "datarouter.ol.epicgames.com" matched cert's "datarouter.ol.epicgames.com")
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 30 ( issuer: C=US; O=Amazon; CN=Amazon RSA 2048 M03)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 31 ( SSL certificate verify ok.)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 32 (using HTTP/1.1)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 33 (necessary data rewind wasn't possible)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 34 (Closing connection)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: 00000AF1D663C300: libcurl info message cache 35 (TLSv1.2 (OUT), TLS alert, close notify (256):)
+[2024.03.17-01.52.51:828][ 10]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BDAEDDAED-4765-E102-6033-3983B347213C%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.3.2-29314046%2B%2B%2BUE5%2BRelease-5.3&UserID=7ee112934662a170852c83b103232871%7C0b6c49a0840e4e9584fc2c73a7cc3aa6%7Cfc714748-610c-4b62-8265-9438d4a966fd&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2024.03.17-01.52.52:150][ 33]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.03.17-01.52.52:175][ 33]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.03.17-01.52.52:175][ 33]PIE: New page: PIE session: TestingMap (Mar 16, 2024, 3:52:52 PM)
+[2024.03.17-01.52.52:175][ 33]LogPlayLevel: Creating play world package: /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap
+[2024.03.17-01.52.52:179][ 33]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003622s)
+[2024.03.17-01.52.52:179][ 33]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SurvivalFPS/Maps/TestingMap.TestingMap to /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap (0.003652s)
+[2024.03.17-01.52.52:195][ 33]LogUObjectHash: Compacting FUObjectHashTables data took   1.18ms
+[2024.03.17-01.52.52:209][ 33]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.03.17-01.52.52:209][ 33]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.03.17-01.52.52:210][ 33]LogAIModule: Creating AISystem for world TestingMap
+[2024.03.17-01.52.52:210][ 33]LogPlayLevel: PIE: World Init took: (0.000945s)
+[2024.03.17-01.52.52:210][ 33]LogAudio: Display: Creating Audio Device:                 Id: 20, Scope: Unique, Realtime: True
+[2024.03.17-01.52.52:210][ 33]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.03.17-01.52.52:210][ 33]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.03.17-01.52.52:210][ 33]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.03.17-01.52.52:210][ 33]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.03.17-01.52.52:210][ 33]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.03.17-01.52.52:210][ 33]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.03.17-01.52.52:210][ 33]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.03.17-01.52.52:210][ 33]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.03.17-01.52.52:211][ 33]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.03.17-01.52.52:211][ 33]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.03.17-01.52.52:211][ 33]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.03.17-01.52.52:212][ 33]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.03.17-01.52.52:239][ 33]LogAudioMixer: Display: Using Audio Hardware Device SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)
+[2024.03.17-01.52.52:240][ 33]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.03.17-01.52.52:240][ 33]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.03.17-01.52.52:240][ 33]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.03.17-01.52.52:240][ 33]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=20
+[2024.03.17-01.52.52:240][ 33]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=20
+[2024.03.17-01.52.52:242][ 33]LogInit: FAudioDevice initialized with ID 20.
+[2024.03.17-01.52.52:242][ 33]LogAudio: Display: Audio Device (ID: 20) registered with world 'TestingMap'.
+[2024.03.17-01.52.52:242][ 33]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=20
+[2024.03.17-01.52.52:242][ 33]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=20
+[2024.03.17-01.52.52:242][ 33]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 20
+[2024.03.17-01.52.52:245][ 33]LogLoad: Game class is 'BP_SurvivalFPSGamemode_C'
+[2024.03.17-01.52.52:247][ 33]LogWorld: Bringing World /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap up for play (max tick rate 0) at 2024.03.16-20.52.52
+[2024.03.17-01.52.52:248][ 33]LogWorld: Bringing up level for play took: 0.001955
+[2024.03.17-01.52.52:250][ 33]LogOnline: OSS: Created online subsystem instance for: :Context_79
+[2024.03.17-01.52.52:251][ 33]LogTemp: Warning: BeginPlay
+[2024.03.17-01.52.52:252][ 33]LogActor: Warning: BP_Pistol_C /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap:PersistentLevel.BP_Pistol_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.03.17-01.52.52:253][ 33]LogEnhancedInput: Warning: Called AddMappingContext with a null Mapping Context! No changes have been applied.
+[2024.03.17-01.52.52:253][ 33]PIE: Server logged in
+[2024.03.17-01.52.52:254][ 33]PIE: Play in editor total start time 0.087 seconds.
+[2024.03.17-01.52.58:405][571]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.03.17-01.52.58:405][571]LogWorld: BeginTearingDown for /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap
+[2024.03.17-01.52.58:405][571]LogWorld: UWorld::CleanupWorld for TestingMap, bSessionEnded=true, bCleanupResources=true
+[2024.03.17-01.52.58:405][571]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.52.58:408][571]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.03.17-01.52.58:413][571]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.52.58:427][571]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.03.17-01.52.58:427][571]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 20
+[2024.03.17-01.52.58:428][571]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=20
+[2024.03.17-01.52.58:429][571]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=20
+[2024.03.17-01.52.58:433][571]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.03.17-01.52.58:436][571]LogUObjectHash: Compacting FUObjectHashTables data took   1.19ms
+[2024.03.17-01.52.58:592][572]LogPlayLevel: Display: Destroying online subsystem :Context_79
+[2024.03.17-01.53.00:338][688]LogUObjectHash: Compacting FUObjectHashTables data took   1.33ms
+[2024.03.17-01.53.01:258][755]LogUObjectHash: Compacting FUObjectHashTables data took   0.85ms
+[2024.03.17-01.53.01:390][764]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2024.03.17-01.53.02:386][837]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.03.17-01.53.02:407][837]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.03.17-01.53.02:407][837]PIE: New page: PIE session: TestingMap (Mar 16, 2024, 3:53:02 PM)
+[2024.03.17-01.53.02:407][837]LogPlayLevel: Creating play world package: /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap
+[2024.03.17-01.53.02:410][837]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003036s)
+[2024.03.17-01.53.02:410][837]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SurvivalFPS/Maps/TestingMap.TestingMap to /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap (0.003062s)
+[2024.03.17-01.53.02:425][837]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2024.03.17-01.53.02:426][837]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.03.17-01.53.02:427][837]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.03.17-01.53.02:427][837]LogAIModule: Creating AISystem for world TestingMap
+[2024.03.17-01.53.02:427][837]LogPlayLevel: PIE: World Init took: (0.000977s)
+[2024.03.17-01.53.02:427][837]LogAudio: Display: Creating Audio Device:                 Id: 21, Scope: Unique, Realtime: True
+[2024.03.17-01.53.02:427][837]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.03.17-01.53.02:427][837]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.03.17-01.53.02:427][837]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.03.17-01.53.02:427][837]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.03.17-01.53.02:428][837]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.03.17-01.53.02:428][837]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.03.17-01.53.02:428][837]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.03.17-01.53.02:428][837]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.03.17-01.53.02:428][837]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.03.17-01.53.02:428][837]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.03.17-01.53.02:428][837]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.03.17-01.53.02:430][837]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.03.17-01.53.02:457][837]LogAudioMixer: Display: Using Audio Hardware Device SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)
+[2024.03.17-01.53.02:457][837]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.03.17-01.53.02:457][837]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.03.17-01.53.02:457][837]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.03.17-01.53.02:458][837]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=21
+[2024.03.17-01.53.02:458][837]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=21
+[2024.03.17-01.53.02:460][837]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=21
+[2024.03.17-01.53.02:460][837]LogInit: FAudioDevice initialized with ID 21.
+[2024.03.17-01.53.02:460][837]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=21
+[2024.03.17-01.53.02:460][837]LogAudio: Display: Audio Device (ID: 21) registered with world 'TestingMap'.
+[2024.03.17-01.53.02:460][837]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 21
+[2024.03.17-01.53.02:462][837]LogLoad: Game class is 'BP_SurvivalFPSGamemode_C'
+[2024.03.17-01.53.02:464][837]LogWorld: Bringing World /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap up for play (max tick rate 0) at 2024.03.16-20.53.02
+[2024.03.17-01.53.02:465][837]LogWorld: Bringing up level for play took: 0.002039
+[2024.03.17-01.53.02:467][837]LogOnline: OSS: Created online subsystem instance for: :Context_80
+[2024.03.17-01.53.02:468][837]LogTemp: Warning: BeginPlay
+[2024.03.17-01.53.02:469][837]LogActor: Warning: BP_Pistol_C /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap:PersistentLevel.BP_Pistol_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.03.17-01.53.02:470][837]LogEnhancedInput: Warning: Called AddMappingContext with a null Mapping Context! No changes have been applied.
+[2024.03.17-01.53.02:470][837]PIE: Server logged in
+[2024.03.17-01.53.02:470][837]PIE: Play in editor total start time 0.07 seconds.
+[2024.03.17-01.53.06:776][218]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.03.17-01.53.06:776][218]LogWorld: BeginTearingDown for /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap
+[2024.03.17-01.53.06:776][218]LogWorld: UWorld::CleanupWorld for TestingMap, bSessionEnded=true, bCleanupResources=true
+[2024.03.17-01.53.06:776][218]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.53.06:779][218]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.03.17-01.53.06:787][218]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.53.06:802][218]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.03.17-01.53.06:802][218]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 21
+[2024.03.17-01.53.06:802][218]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=21
+[2024.03.17-01.53.06:804][218]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=21
+[2024.03.17-01.53.06:811][218]LogUObjectHash: Compacting FUObjectHashTables data took   1.28ms
+[2024.03.17-01.53.06:963][219]LogPlayLevel: Display: Destroying online subsystem :Context_80
+[2024.03.17-01.53.18:812][ 40]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.03.17-01.53.18:833][ 40]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.03.17-01.53.18:833][ 40]PIE: New page: PIE session: TestingMap (Mar 16, 2024, 3:53:18 PM)
+[2024.03.17-01.53.18:833][ 40]LogPlayLevel: Creating play world package: /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap
+[2024.03.17-01.53.18:836][ 40]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003232s)
+[2024.03.17-01.53.18:836][ 40]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SurvivalFPS/Maps/TestingMap.TestingMap to /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap (0.003260s)
+[2024.03.17-01.53.18:851][ 40]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
+[2024.03.17-01.53.18:855][ 40]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.03.17-01.53.18:855][ 40]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.03.17-01.53.18:855][ 40]LogAIModule: Creating AISystem for world TestingMap
+[2024.03.17-01.53.18:855][ 40]LogPlayLevel: PIE: World Init took: (0.000888s)
+[2024.03.17-01.53.18:855][ 40]LogAudio: Display: Creating Audio Device:                 Id: 22, Scope: Unique, Realtime: True
+[2024.03.17-01.53.18:856][ 40]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.03.17-01.53.18:856][ 40]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.03.17-01.53.18:856][ 40]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.03.17-01.53.18:856][ 40]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.03.17-01.53.18:856][ 40]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.03.17-01.53.18:856][ 40]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.03.17-01.53.18:856][ 40]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.03.17-01.53.18:856][ 40]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.03.17-01.53.18:856][ 40]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.03.17-01.53.18:856][ 40]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.03.17-01.53.18:856][ 40]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.03.17-01.53.18:858][ 40]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.03.17-01.53.18:885][ 40]LogAudioMixer: Display: Using Audio Hardware Device SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)
+[2024.03.17-01.53.18:885][ 40]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.03.17-01.53.18:885][ 40]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.03.17-01.53.18:885][ 40]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.03.17-01.53.18:886][ 40]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=22
+[2024.03.17-01.53.18:886][ 40]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=22
+[2024.03.17-01.53.18:888][ 40]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=22
+[2024.03.17-01.53.18:888][ 40]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=22
+[2024.03.17-01.53.18:888][ 40]LogInit: FAudioDevice initialized with ID 22.
+[2024.03.17-01.53.18:888][ 40]LogAudio: Display: Audio Device (ID: 22) registered with world 'TestingMap'.
+[2024.03.17-01.53.18:888][ 40]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 22
+[2024.03.17-01.53.18:893][ 40]LogLoad: Game class is 'BP_SurvivalFPSGamemode_C'
+[2024.03.17-01.53.18:894][ 40]LogWorld: Bringing World /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap up for play (max tick rate 0) at 2024.03.16-20.53.18
+[2024.03.17-01.53.18:895][ 40]LogWorld: Bringing up level for play took: 0.002025
+[2024.03.17-01.53.18:897][ 40]LogOnline: OSS: Created online subsystem instance for: :Context_81
+[2024.03.17-01.53.18:899][ 40]LogTemp: Warning: BeginPlay
+[2024.03.17-01.53.18:899][ 40]LogActor: Warning: BP_Pistol_C /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap.TestingMap:PersistentLevel.BP_Pistol_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2024.03.17-01.53.18:900][ 40]LogEnhancedInput: Warning: Called AddMappingContext with a null Mapping Context! No changes have been applied.
+[2024.03.17-01.53.18:900][ 40]PIE: Server logged in
+[2024.03.17-01.53.18:901][ 40]PIE: Play in editor total start time 0.075 seconds.
+[2024.03.17-01.53.46:775][610]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.03.17-01.53.46:775][610]LogWorld: BeginTearingDown for /Game/SurvivalFPS/Maps/UEDPIE_0_TestingMap
+[2024.03.17-01.53.46:775][610]LogWorld: UWorld::CleanupWorld for TestingMap, bSessionEnded=true, bCleanupResources=true
+[2024.03.17-01.53.46:775][610]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.53.46:778][610]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.03.17-01.53.46:783][610]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.03.17-01.53.46:798][610]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.03.17-01.53.46:798][610]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 22
+[2024.03.17-01.53.46:798][610]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=22
+[2024.03.17-01.53.46:800][610]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=22
+[2024.03.17-01.53.46:806][610]LogUObjectHash: Compacting FUObjectHashTables data took   1.21ms
+[2024.03.17-01.53.46:958][611]LogPlayLevel: Display: Destroying online subsystem :Context_81
+[2024.03.17-01.54.27:901][550]LogUObjectHash: Compacting FUObjectHashTables data took   1.38ms

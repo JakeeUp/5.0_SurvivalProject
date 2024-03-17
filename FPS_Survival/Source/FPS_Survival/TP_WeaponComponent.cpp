@@ -13,6 +13,7 @@
 #include "AI/NavigationSystemBase.h"
 #include "AI/NavigationSystemBase.h"
 #include "Components/SceneComponent.h"
+#include "Enemy.h"
 
 // Sets default values for this component's properties
 UTP_WeaponComponent::UTP_WeaponComponent()
@@ -49,6 +50,20 @@ void UTP_WeaponComponent::Fire()
 
 			World->LineTraceSingleByChannel(outHit, SpawnLocation,SpawnLocation + (SpawnRotation.Vector()* 3000), ECollisionChannel::ECC_Pawn, queryParams);
 			DrawDebugLine(World, SpawnLocation, SpawnLocation + (SpawnRotation.Vector()* 3000), FColor::Red,false, 5.f,5,5.f);
+
+			//cast hit to enemy
+			AEnemy* pEnemy = Cast<AEnemy>(outHit.GetActor());
+			if(pEnemy)
+			{
+				pEnemy->TakeDamage(10.0f);
+			}
+			else //play enviro sounds
+			{
+				if(m_wEnvironmentalSounds.Num() > 0)
+				{
+					UGameplayStatics::PlaySoundAtLocation(GetWorld(), m_wEnvironmentalSounds[FMath::RandRange(0,m_wEnvironmentalSounds.Num()-1)], Character->GetActorLocation());
+				}
+			}
 
 			Character->currentAmmo = Character->currentAmmo - 1;
 

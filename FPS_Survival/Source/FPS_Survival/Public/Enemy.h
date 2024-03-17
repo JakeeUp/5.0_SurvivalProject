@@ -45,7 +45,7 @@ public:
 	USoundBase* m_pEnemyDamageSounds;
 
 	//combat stuff
-
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	float m_fHealth = 30.f;
 	FVector m_vWorldSpawnLocation;
 	bool m_bInCombat = false;
