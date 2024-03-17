@@ -27,4 +27,41 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	//ref to montages
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
+	UAnimMontage* m_pAttackMontage;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation")
+	UAnimMontage* m_pDeathMontage;
+
+	//ref to sounds
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Sound")
+	TArray<USoundBase*> m_pAttackSounds;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Sound")
+	TArray<USoundBase*> m_pDeathSounds;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Sound")
+	USoundBase* m_pEnemyDamageSounds;
+
+	//combat stuff
+
+	float m_fHealth = 30.f;
+	FVector m_vWorldSpawnLocation;
+	bool m_bInCombat = false;
+
+	//combat methods
+	void Attack();
+
+	void TakeDamage(float a_fDamage);
+
+	//death methods
+
+	void Die();
+	void Reset();
+
+	//montage end handler
+	UFUNCTION()
+	void HandleOnMontageEnded(UAnimMontage* a_pMontage, bool a_bInterrupted);
+
 };

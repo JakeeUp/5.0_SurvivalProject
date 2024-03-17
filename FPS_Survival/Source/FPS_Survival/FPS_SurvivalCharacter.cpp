@@ -15,7 +15,8 @@
 #include "NetworkMessage.h"
 #include "Engine/LocalPlayer.h"
 #include "TP_WeaponComponent.h"
-#include "Blueprint/UserWidget.h" 
+#include "Blueprint/UserWidget.h"
+#include "Kismet/GameplayStatics.h"
 
 //////////////////////////////////////////////////////////////////////////
 // AFPS_SurvivalCharacter
@@ -156,6 +157,17 @@ void AFPS_SurvivalCharacter::EquipWeapon()
 	UTP_WeaponComponent* pWeapon = m_pEquippedWeapon->m_pWeaponComponent;
 
 	pWeapon->AttachWeapon(this);
+}
+
+void AFPS_SurvivalCharacter::TakeDamage(float a_fDamage)
+{
+	//deal damage
+	m_fHealth -= a_fDamage;
+	//death handle
+	if(m_fHealth <= 0)
+	{
+		UGameplayStatics::OpenLevel(GetWorld(), FName(GetWorld()->GetName()), true);
+	}
 }
 
 void AFPS_SurvivalCharacter::Move(const FInputActionValue& Value)
