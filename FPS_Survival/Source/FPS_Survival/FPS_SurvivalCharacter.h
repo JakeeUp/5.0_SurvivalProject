@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "Logging/LogMacros.h"
 #include "FPS_Weapon.h"
+#include "GameFramework/SpringArmComponent.h"
 #include "FPS_SurvivalCharacter.generated.h"
 
 class UInputComponent;
@@ -41,6 +42,10 @@ class AFPS_SurvivalCharacter : public ACharacter
 	/** First person camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* FirstPersonCameraComponent;
+
+	/** First person SpringArm */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	USpringArmComponent* FirstPersonSpringArmComponent;
 
 
 	/****************************************************/
