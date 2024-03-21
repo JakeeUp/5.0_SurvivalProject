@@ -7,6 +7,7 @@
 
 #include "FPS_Survival/FPS_SurvivalCharacter.h"
 
+#include "GlobalManager.h"
 // Sets default values
 AEnemy::AEnemy()
 {
@@ -127,6 +128,8 @@ void AEnemy::HandleOnMontageEnded(UAnimMontage* a_pMontage, bool a_bInterrupted)
 	if(a_pMontage->GetName().Contains("Death"))
 	{
 		Reset();
+		//add points
+		Cast<UGlobalManager>(UGameplayStatics::GetGameInstance(GetWorld()))->m_iPoints += 100;
 
 		//update manager
 		m_pEnemyManager->m_iWaveKills++;

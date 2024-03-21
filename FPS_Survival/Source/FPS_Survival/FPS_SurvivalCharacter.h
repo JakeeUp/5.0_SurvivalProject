@@ -1,6 +1,6 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
-
 #pragma once
+
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
@@ -72,6 +72,9 @@ class AFPS_SurvivalCharacter : public ACharacter
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
 	UInputAction* MainAction;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
+	UInputAction* InteractAction;
+
 
 
 	/****************************************************/
@@ -133,6 +136,9 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	int totalAmmo = 0;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	bool m_bCanInteract = false;
 protected:
 	/** Called for movement input */
 	void Move(const FInputActionValue& Value);
@@ -143,6 +149,9 @@ protected:
 	void Reload();
 
 	void OnPrimaryAction();
+
+	//method for handling interactions
+	void Interact();
 
 protected:
 	// APawn interface

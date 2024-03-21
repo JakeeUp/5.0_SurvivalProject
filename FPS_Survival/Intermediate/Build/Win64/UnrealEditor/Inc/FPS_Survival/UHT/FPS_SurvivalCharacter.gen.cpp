@@ -274,6 +274,10 @@ void FOnUseItem_DelegateWrapper(const FMulticastScriptDelegate& OnUseItem)
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_MainAction;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_InteractAction_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_InteractAction;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_m_cPlayerHud_MetaData[];
 #endif
 		static const UECodeGen_Private::FClassPropertyParams NewProp_m_cPlayerHud;
@@ -310,6 +314,11 @@ void FOnUseItem_DelegateWrapper(const FMulticastScriptDelegate& OnUseItem)
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_totalAmmo_MetaData[];
 #endif
 		static const UECodeGen_Private::FIntPropertyParams NewProp_totalAmmo;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_m_bCanInteract_MetaData[];
+#endif
+		static void NewProp_m_bCanInteract_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_m_bCanInteract;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -449,6 +458,14 @@ void FOnUseItem_DelegateWrapper(const FMulticastScriptDelegate& OnUseItem)
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_MainAction = { "MainAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFPS_SurvivalCharacter, MainAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_MainAction_MetaData), Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_MainAction_MetaData) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_InteractAction_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "FPS_SurvivalCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_InteractAction = { "InteractAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFPS_SurvivalCharacter, InteractAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_InteractAction_MetaData), Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_InteractAction_MetaData) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_m_cPlayerHud_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Weapon" },
@@ -544,6 +561,17 @@ void FOnUseItem_DelegateWrapper(const FMulticastScriptDelegate& OnUseItem)
 	};
 #endif
 	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_totalAmmo = { "totalAmmo", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AFPS_SurvivalCharacter, totalAmmo), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_totalAmmo_MetaData), Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_totalAmmo_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_m_bCanInteract_MetaData[] = {
+		{ "Category", "FPS_SurvivalCharacter" },
+		{ "ModuleRelativePath", "FPS_SurvivalCharacter.h" },
+	};
+#endif
+	void Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_m_bCanInteract_SetBit(void* Obj)
+	{
+		((AFPS_SurvivalCharacter*)Obj)->m_bCanInteract = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_m_bCanInteract = { "m_bCanInteract", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AFPS_SurvivalCharacter), &Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_m_bCanInteract_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_m_bCanInteract_MetaData), Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_m_bCanInteract_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_m_cPistol,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_Mesh1P,
@@ -554,6 +582,7 @@ void FOnUseItem_DelegateWrapper(const FMulticastScriptDelegate& OnUseItem)
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_MoveAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_ReloadAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_MainAction,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_InteractAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_m_cPlayerHud,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_LookAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_bHasRifle,
@@ -563,6 +592,7 @@ void FOnUseItem_DelegateWrapper(const FMulticastScriptDelegate& OnUseItem)
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_m_fHealth,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_currentAmmo,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_totalAmmo,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::NewProp_m_bCanInteract,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFPS_SurvivalCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFPS_SurvivalCharacter>::IsAbstract,
@@ -597,15 +627,15 @@ void FOnUseItem_DelegateWrapper(const FMulticastScriptDelegate& OnUseItem)
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFPS_SurvivalCharacter);
 	AFPS_SurvivalCharacter::~AFPS_SurvivalCharacter() {}
-	struct Z_CompiledInDeferFile_FID_Git_UE_5_0_Project_5_0_SurvivalProject_FPS_Survival_Source_FPS_Survival_FPS_SurvivalCharacter_h_Statics
+	struct Z_CompiledInDeferFile_FID_GitHub_UE5_5_0_SurvivalProject_FPS_Survival_Source_FPS_Survival_FPS_SurvivalCharacter_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Git_UE_5_0_Project_5_0_SurvivalProject_FPS_Survival_Source_FPS_Survival_FPS_SurvivalCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AFPS_SurvivalCharacter, AFPS_SurvivalCharacter::StaticClass, TEXT("AFPS_SurvivalCharacter"), &Z_Registration_Info_UClass_AFPS_SurvivalCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPS_SurvivalCharacter), 1561063202U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GitHub_UE5_5_0_SurvivalProject_FPS_Survival_Source_FPS_Survival_FPS_SurvivalCharacter_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_AFPS_SurvivalCharacter, AFPS_SurvivalCharacter::StaticClass, TEXT("AFPS_SurvivalCharacter"), &Z_Registration_Info_UClass_AFPS_SurvivalCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AFPS_SurvivalCharacter), 2876473911U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Git_UE_5_0_Project_5_0_SurvivalProject_FPS_Survival_Source_FPS_Survival_FPS_SurvivalCharacter_h_2997379391(TEXT("/Script/FPS_Survival"),
-		Z_CompiledInDeferFile_FID_Git_UE_5_0_Project_5_0_SurvivalProject_FPS_Survival_Source_FPS_Survival_FPS_SurvivalCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Git_UE_5_0_Project_5_0_SurvivalProject_FPS_Survival_Source_FPS_Survival_FPS_SurvivalCharacter_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GitHub_UE5_5_0_SurvivalProject_FPS_Survival_Source_FPS_Survival_FPS_SurvivalCharacter_h_2126802578(TEXT("/Script/FPS_Survival"),
+		Z_CompiledInDeferFile_FID_GitHub_UE5_5_0_SurvivalProject_FPS_Survival_Source_FPS_Survival_FPS_SurvivalCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GitHub_UE5_5_0_SurvivalProject_FPS_Survival_Source_FPS_Survival_FPS_SurvivalCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

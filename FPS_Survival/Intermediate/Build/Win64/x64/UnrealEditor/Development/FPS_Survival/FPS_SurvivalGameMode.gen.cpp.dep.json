@@ -1,17 +1,17 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "f:\\git\\ue\\5.0_project\\5.0_survivalproject\\fps_survival\\intermediate\\build\\win64\\unrealeditor\\inc\\fps_survival\\uht\\fps_survivalgamemode.gen.cpp",
+        "Source": "c:\\github\\ue5\\5.0_survivalproject\\fps_survival\\intermediate\\build\\win64\\unrealeditor\\inc\\fps_survival\\uht\\fps_survivalgamemode.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "f:\\git\\ue\\5.0_project\\5.0_survivalproject\\fps_survival\\intermediate\\build\\win64\\x64\\fps_survivaleditor\\development\\unrealed\\sharedpch.unrealed.cpp17.inclorderunreal5_0.h.pch",
+        "PCH": "c:\\github\\ue5\\5.0_survivalproject\\fps_survival\\intermediate\\build\\win64\\x64\\fps_survivaleditor\\development\\unrealed\\sharedpch.unrealed.cpp17.inclorderunreal5_0.h.pch",
         "Includes": [
-            "f:\\git\\ue\\5.0_project\\5.0_survivalproject\\fps_survival\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\fps_survival\\definitions.fps_survival.h",
-            "f:\\git\\ue\\5.0_project\\5.0_survivalproject\\fps_survival\\source\\fps_survival\\fps_survivalgamemode.h",
-            "f:\\epicganes\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
-            "f:\\epicganes\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
-            "f:\\epicganes\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
-            "f:\\epicganes\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
-            "f:\\git\\ue\\5.0_project\\5.0_survivalproject\\fps_survival\\intermediate\\build\\win64\\unrealeditor\\inc\\fps_survival\\uht\\fps_survivalgamemode.generated.h"
+            "c:\\github\\ue5\\5.0_survivalproject\\fps_survival\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\fps_survival\\definitions.fps_survival.h",
+            "c:\\github\\ue5\\5.0_survivalproject\\fps_survival\\source\\fps_survival\\fps_survivalgamemode.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\github\\ue5\\5.0_survivalproject\\fps_survival\\intermediate\\build\\win64\\unrealeditor\\inc\\fps_survival\\uht\\fps_survivalgamemode.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

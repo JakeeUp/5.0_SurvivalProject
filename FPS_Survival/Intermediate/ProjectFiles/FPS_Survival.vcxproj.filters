@@ -75,6 +75,9 @@
     <Filter Include="Source\FPS_Survival\Private">
       <UniqueIdentifier>{C6ADB915-F9C2-3898-ABD5-92BEB1B62208}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\FPS_Survival\Private\AmmoStation.cpp">
+      <Filter>Source\FPS_Survival\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\FPS_Survival\Private\BTT_Attack.cpp">
       <Filter>Source\FPS_Survival\Private</Filter>
     </ClCompile>
@@ -105,12 +108,18 @@
     <ClCompile Include="..\..\Source\FPS_Survival\Private\FPS_Weapon.cpp">
       <Filter>Source\FPS_Survival\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\FPS_Survival\Private\GlobalManager.cpp">
+      <Filter>Source\FPS_Survival\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\FPS_Survival\Private\IsPlayerInRange.cpp">
       <Filter>Source\FPS_Survival\Private</Filter>
     </ClCompile>
     <Filter Include="Source\FPS_Survival\Public">
       <UniqueIdentifier>{B199C01D-7CB9-3C1B-9264-8E9F489BC579}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\FPS_Survival\Public\AmmoStation.h">
+      <Filter>Source\FPS_Survival\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\FPS_Survival\Public\BTT_Attack.h">
       <Filter>Source\FPS_Survival\Public</Filter>
     </ClInclude>
@@ -139,6 +148,9 @@
       <Filter>Source\FPS_Survival\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\FPS_Survival\Public\FPS_Weapon.h">
+      <Filter>Source\FPS_Survival\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\FPS_Survival\Public\GlobalManager.h">
       <Filter>Source\FPS_Survival\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\FPS_Survival\Public\IsPlayerInRange.h">

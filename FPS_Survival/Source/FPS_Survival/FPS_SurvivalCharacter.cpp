@@ -16,6 +16,7 @@
 #include "TP_WeaponComponent.h"
 #include "Blueprint/UserWidget.h"
 #include "Kismet/GameplayStatics.h"
+#include "GlobalManager.h"
 
 //////////////////////////////////////////////////////////////////////////
 // AFPS_SurvivalCharacter
@@ -91,6 +92,8 @@ void AFPS_SurvivalCharacter::SetupPlayerInputComponent(UInputComponent* PlayerIn
 		// Reloading
 		EnhancedInputComponent->BindAction(ReloadAction, ETriggerEvent::Triggered,this,&AFPS_SurvivalCharacter::Reload);
 
+		//Interact
+		EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Triggered, this, &AFPS_SurvivalCharacter::Interact);
 		//Shooting
 		EnhancedInputComponent->BindAction(MainAction,ETriggerEvent::Triggered,this,&AFPS_SurvivalCharacter::OnPrimaryAction);
 	}
@@ -229,6 +232,24 @@ void AFPS_SurvivalCharacter::OnPrimaryAction()
 		if(m_pShootMontage != nullptr)
 		{
 			pAnimInstance->Montage_Play(m_pShootMontage,1.f);
+		}
+	}
+}
+
+void AFPS_SurvivalCharacter::Interact()
+{
+		UE_LOG(LogTemp, Warning, TEXT("INTERACTING"));
+	//Ensure player can interact
+	if(m_bCanInteract)
+	{
+		//get the global manager
+		UGlobalManager* pMnger = Cast<UGlobalManager>(UGameplayStatics::GetGameInstance(GetWorld()));
+		if(pMnger->m_iPoints >= 5) // player has at least 100 points to use ammo
+		{
+			pMnger->m_iPoints -= 5;
+
+			currentAmmo = m_pEquippedWeapon->m_iClipSize;
+			totalAmmo = m_pEquippedWeapon->m_iMaxSize;
 		}
 	}
 }

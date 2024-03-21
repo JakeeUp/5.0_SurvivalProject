@@ -5,6 +5,12 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/GitHub/UE5/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Blueprints/UI/WBP_Hud.uasset",
+				"C:/GitHub/UE5/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Inputs/Actions/IA_Interact.uasset",
+				"C:/GitHub/UE5/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Inputs/IMC_Default.uasset",
+				"C:/GitHub/UE5/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Blueprints/BP_AmmoStation.uasset",
+				"C:/GitHub/UE5/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Maps/TestingMap.umap",
+				"C:/GitHub/UE5/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Blueprints/BP_FPS_Controller.uasset",
 				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/textures/armNormal.uasset",
 				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/textures/armRoughness.uasset",
 				"F:/Git/UE/5.0_Project/5.0_SurvivalProject/FPS_Survival/Content/SurvivalFPS/Assets/textures/armAO.uasset",

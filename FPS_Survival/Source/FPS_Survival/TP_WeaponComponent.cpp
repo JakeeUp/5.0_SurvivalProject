@@ -11,6 +11,7 @@
 #include "AI/NavigationSystemBase.h"
 #include "Components/SceneComponent.h"
 #include "Enemy.h"
+#include "GlobalManager.h"
 
 // Sets default values for this component's properties
 UTP_WeaponComponent::UTP_WeaponComponent()
@@ -53,6 +54,7 @@ void UTP_WeaponComponent::Fire()
 			if(pEnemy)
 			{
 				pEnemy->e_TakeDamage(10.0f);
+				Cast<UGlobalManager>(UGameplayStatics::GetGameInstance(GetWorld()))->m_iPoints += 10;
 			}
 			else //play enviro sounds
 			{
