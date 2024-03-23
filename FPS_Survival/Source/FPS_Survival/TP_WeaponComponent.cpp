@@ -47,7 +47,7 @@ void UTP_WeaponComponent::Fire()
 			FHitResult outHit;
 
 			World->LineTraceSingleByChannel(outHit, SpawnLocation,SpawnLocation + (SpawnRotation.Vector()* 3000), ECollisionChannel::ECC_Pawn, queryParams);
-			DrawDebugLine(World, SpawnLocation, SpawnLocation + (SpawnRotation.Vector()* 3000), FColor::Red,false, 5.f,5,5.f);
+			//DrawDebugLine(World, SpawnLocation, SpawnLocation + (SpawnRotation.Vector()* 3000), FColor::Red,false, 5.f,5,5.f);
 
 			//cast hit to enemy
 			AEnemy* pEnemy = Cast<AEnemy>(outHit.GetActor());

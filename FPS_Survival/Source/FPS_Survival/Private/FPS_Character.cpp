@@ -15,7 +15,7 @@
 AFPS_Character::AFPS_Character()
 {
 	// Character doesnt have a rifle at start
-	bHasRifle = false;
+	//bHasRifle = false;
 	
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(55.f, 96.0f);
@@ -44,12 +44,17 @@ void AFPS_Character::BeginPlay()
 	Super::BeginPlay();
 
 	// Add Input Mapping Context
+
+	//check for multiple inputs
+	//add
 	if (APlayerController* PlayerController = Cast<APlayerController>(Controller))
 	{
 		if (UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer()))
 		{
+			Subsystem->RemoveMappingContext(DefaultMappingContext);
 			Subsystem->AddMappingContext(DefaultMappingContext, 0);
 		}
+		
 	}
 
 	
@@ -60,7 +65,7 @@ void AFPS_Character::SetHasRifle(bool bNewHasRifle)
 	bHasRifle = bNewHasRifle;
 }
 
-bool AFPS_Character::GetHasRifle()
+bool AFPS_Character::GetHasRifle() //make to const
 {
 	return bHasRifle;
 }

@@ -14,6 +14,7 @@ class FPS_SURVIVAL_API UGlobalManager : public UGameInstance
 {
 	GENERATED_BODY()
 
+	//MAKE PRIVATE , MAKE FUNCTION TO INCREMENT IT, CONST TO GET IT
 public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	int m_iPoints = 0;

@@ -125,11 +125,15 @@ void AEnemy::Reset()
 void AEnemy::HandleOnMontageEnded(UAnimMontage* a_pMontage, bool a_bInterrupted)
 {
 	//CHECK DEAHT MONTAGE
+	//animation notify for the death
+	//figure out other way other than looking for a string
+	
 	if(a_pMontage->GetName().Contains("Death"))
 	{
 		Reset();
 		//add points
-		Cast<UGlobalManager>(UGameplayStatics::GetGameInstance(GetWorld()))->m_iPoints += 100;
+		//move add points to where enemy health is at 0
+		Cast<UGlobalManager>(UGameplayStatics::GetGameInstance(GetWorld()))->m_iPoints += 100; //gameinstance problem for multiple players
 
 		//update manager
 		m_pEnemyManager->m_iWaveKills++;
