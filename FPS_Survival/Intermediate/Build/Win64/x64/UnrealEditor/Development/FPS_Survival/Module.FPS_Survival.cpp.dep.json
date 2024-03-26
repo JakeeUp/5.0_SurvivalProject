@@ -516,8 +516,7 @@
             "c:\\github\\ue5\\5.0_survivalproject\\fps_survival\\source\\fps_survival\\private\\fps_weapon.cpp",
             "c:\\github\\ue5\\5.0_survivalproject\\fps_survival\\source\\fps_survival\\private\\globalmanager.cpp",
             "c:\\github\\ue5\\5.0_survivalproject\\fps_survival\\source\\fps_survival\\private\\isplayerinrange.cpp",
-            "c:\\github\\ue5\\5.0_survivalproject\\fps_survival\\source\\fps_survival\\tp_pickupcomponent.cpp",
-            "c:\\github\\ue5\\5.0_survivalproject\\fps_survival\\source\\fps_survival\\tp_weaponcomponent.cpp"
+            "c:\\github\\ue5\\5.0_survivalproject\\fps_survival\\source\\fps_survival\\tp_pickupcomponent.cpp"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
