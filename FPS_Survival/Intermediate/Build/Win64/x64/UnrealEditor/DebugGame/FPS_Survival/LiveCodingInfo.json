@@ -2,6 +2,7 @@
 	"RemapUnityFiles": 
 	{
 		"Module.FPS_Survival.cpp.obj": [
+			"AmmoStation.gen.cpp.obj",
 			"BTT_Attack.gen.cpp.obj",
 			"BTT_ChasePlayer.gen.cpp.obj",
 			"BTT_FindPlayerLocation.gen.cpp.obj",
@@ -15,6 +16,7 @@
 			"FPS_SurvivalGameMode.gen.cpp.obj",
 			"FPS_SurvivalProjectile.gen.cpp.obj",
 			"FPS_Weapon.gen.cpp.obj",
+			"GlobalManager.gen.cpp.obj",
 			"IsPlayerInRange.gen.cpp.obj",
 			"TP_PickUpComponent.gen.cpp.obj",
 			"TP_WeaponComponent.gen.cpp.obj",
@@ -22,19 +24,21 @@
 			"FPS_SurvivalCharacter.cpp.obj",
 			"FPS_SurvivalGameMode.cpp.obj",
 			"FPS_SurvivalProjectile.cpp.obj",
+			"AmmoStation.cpp.obj",
 			"BTT_Attack.cpp.obj",
 			"BTT_ChasePlayer.cpp.obj",
 			"BTT_FindPlayerLocation.cpp.obj",
+			"Enemy.cpp.obj",
 			"EnemyKeys.cpp.obj",
+			"EnemyManager.cpp.obj",
 			"Enemy_Controller.cpp.obj",
 			"FPS_Character.cpp.obj",
 			"FPS_Controller.cpp.obj",
 			"FPS_Weapon.cpp.obj",
+			"GlobalManager.cpp.obj",
 			"IsPlayerInRange.cpp.obj",
 			"TP_PickUpComponent.cpp.obj",
-			"TP_WeaponComponent.cpp.obj",
-			"Enemy.cpp.obj",
-			"EnemyManager.cpp.obj"
+			"TP_WeaponComponent.cpp.obj"
 		]
 	}
 }

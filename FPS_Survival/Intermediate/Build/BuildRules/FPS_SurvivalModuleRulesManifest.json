@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\GitHub\\UE5\\5.0_SurvivalProject\\FPS_Survival\\Source\\FPS_Survival\\FPS_Survival.Build.cs",
-		"C:\\GitHub\\UE5\\5.0_SurvivalProject\\FPS_Survival\\Source\\FPS_Survival.Target.cs",
-		"C:\\GitHub\\UE5\\5.0_SurvivalProject\\FPS_Survival\\Source\\FPS_SurvivalEditor.Target.cs"
+		"F:\\Git\\UE\\5.0_Project\\5.0_SurvivalProject\\FPS_Survival\\Source\\FPS_Survival\\FPS_Survival.Build.cs",
+		"F:\\Git\\UE\\5.0_Project\\5.0_SurvivalProject\\FPS_Survival\\Source\\FPS_Survival.Target.cs",
+		"F:\\Git\\UE\\5.0_Project\\5.0_SurvivalProject\\FPS_Survival\\Source\\FPS_SurvivalEditor.Target.cs"
 	],
 	"EngineVersion": "5.3.2"
 }
