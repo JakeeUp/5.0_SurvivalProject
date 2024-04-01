@@ -248,7 +248,7 @@ void AFPS_SurvivalCharacter::Interact()
 	{
 		//get the global manager
 		UGlobalManager* pMnger = Cast<UGlobalManager>(UGameplayStatics::GetGameInstance(GetWorld()));
-		if(pMnger->m_iPoints >= 500) // player has at least 100 points to use ammo
+		if(pMnger->m_iPoints >= 500) // player has at least 500 points to use ammo
 		{
 			pMnger->m_iPoints -= 500;
 
@@ -267,7 +267,7 @@ void AFPS_SurvivalCharacter::HealthInteract()
 		
 		
 		UGlobalManager* pMnger = Cast<UGlobalManager>(UGameplayStatics::GetGameInstance(GetWorld()));
-		if(pMnger->m_iPoints >= 500) // player has at least 100 points to use ammo
+		if(pMnger->m_iPoints >= 500) // player has at least 500 points to use ammo
 		{
 			pMnger->m_iPoints -= 500;
 
